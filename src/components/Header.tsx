@@ -3,6 +3,7 @@
 import { useContext } from "react"
 import { SidebarContext } from "../context/SidebarContext"
 import { SidebarContextType } from "../types/SidebarContextType"
+
 // import icons
 import {BsBag} from 'react-icons/bs'
 

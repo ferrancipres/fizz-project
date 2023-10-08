@@ -1,6 +1,7 @@
 // import 
 // import React-Router-DOM
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { CartItem } from "../components/CartItem"
 
 // import pages
 import { Home } from "../pages/Home"

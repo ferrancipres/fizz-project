@@ -5,6 +5,7 @@ import { SidebarContext } from "../context/SidebarContext"
 // import icons
 import {IoMdArrowForward} from 'react-icons/io'
 
+
 // import context
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext"

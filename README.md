@@ -14,3 +14,6 @@
 ## Step 5: SidebarContext
 
 ## Step 6: CartContext 
+// Pendiente ERROR - LINK (dentro carrito)
+
+## Step 7: Funciones '+' '-'
