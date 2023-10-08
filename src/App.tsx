@@ -1,5 +1,8 @@
 // import 
 import './App.css'
+import { Header } from './components/Header'
+import { Sidebar } from './components/Sidebar'
+import { RoutesPath } from './routes/Routes'
 
 // type 
 
@@ -8,7 +11,9 @@ function App() {
  
   return (
     <>
-    <h1 className='bg-black text-white py-2'>Hello World!</h1>
+    <Header />
+    <Sidebar />
+    <RoutesPath />
     </>
   )
 }

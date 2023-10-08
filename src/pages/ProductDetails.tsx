@@ -1,5 +1,4 @@
 // import 
-// import React from 'react'
 
 // type
 // type Props = {}

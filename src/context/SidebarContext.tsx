@@ -1,12 +1,21 @@
 // import 
-// import React from 'react'
+// import FC, context, useState
+import { FC, createContext, useState} from "react"
 
-// type
-// type Props = {}
+// import type
+import { SideProviderProps } from "../types/SideProviderProps";
 
 // function
-export const SidebarContext = () => {
+export const SidebarContext = createContext({});
+export const SidebarProvider:FC<SideProviderProps> = ({children}) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const handleClose = () => {
+    setIsOpen (false) 
+  }
+
   return (
-    <div>SidebarContext</div>
+    <SidebarContext.Provider value={{isOpen,setIsOpen, handleClose}}>
+      {children}
+    </SidebarContext.Provider>
   )
 }
