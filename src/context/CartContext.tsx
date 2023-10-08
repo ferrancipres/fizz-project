@@ -11,6 +11,7 @@ import { ProductType } from "../components/Product"
 export const CartContext = createContext({})
 export const CartProvider:FC<CartProviderProps> = ({children}) => {
   const [cart, setCart] = useState<ProductType[]>([])
+  //function addToCart
   const addToCart = (product:ProductType) => {
 
     const newItem: ProductType = {... product, amount: 1 }
@@ -34,9 +35,19 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
     }
   }
 
+  // function removeFromCart
+  const removeFromCart = (id:number) => {
+    const newCart = cart.filter((item) => {
+      return item.id !== id
+    })
+    setCart(newCart)
+  }
+
   return (
-    <CartContext.Provider value={{cart, addToCart}}>
+    <CartContext.Provider value={{cart, removeFromCart, addToCart}}>
       {children}
     </CartContext.Provider>
   )
 }
+
+// minuto 1:08:03 - CartContext

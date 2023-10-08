@@ -26,7 +26,6 @@ export const Sidebar = () => {
   const { isOpen, setIsOpen } = useContext(SidebarContext) as SidebarContextType
 
   return (
-    <header className='bg-pink-200'>
       <div className={`${isOpen ? 'right-0' : '-right-full'} w-full bg-white fixed top-0 h-full shadow-2xl md:w-[35vw] xl:max-w-[30vw] transition-all duration-300 z-20 px-4 lg:px-[35px]`}>
         <div className='flex items-center justify-between py-6 border-b'>
           <div className='uppercase text-sm font-semibold'>Shopping Bag(0)</div>
@@ -40,8 +39,13 @@ export const Sidebar = () => {
           return <CartItem item={item} key={item.id} />
         })}
         </div>
+        <div>
+          <div>
+            {/* total */}
+            <div><span>Total:</span>$1000</div>
+          </div>
+        </div>
       </div>
-    </header>
   )
 }
 
