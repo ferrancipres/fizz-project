@@ -17,3 +17,13 @@
 // Pendiente ERROR - LINK (dentro carrito)
 
 ## Step 7: Funciones '+' '-'
+// Pendiente REVISAR TYPES...con los EXPORTS (unificar TODO)
+
+## Step 8: Header state
+minuto 1:21:28 ..
+// Pendiente REVISAR 'Sidebar - overflow'
+// Pendiente REVISAR METODO '.reduce'
+
+## Step 9: Hero 
+minuto 1:40:49 
+// 

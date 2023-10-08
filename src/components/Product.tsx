@@ -3,11 +3,7 @@ import { Link } from "react-router-dom"
 import {BsPlus, BsEyeFill} from 'react-icons/bs'
 import { CartContext } from "../context/CartContext"
 import {useContext } from "react"
-
-//type 
-export type CartContextType = {
-  addToCart: (value: {}) => void
-}
+import { CartContextType } from "../context/CartContext"
 
 export interface ProductType {
   id: number;

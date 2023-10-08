@@ -1,7 +1,6 @@
 // import 
 // import React-Router-DOM
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { CartItem } from "../components/CartItem"
 
 // import pages
 import { Home } from "../pages/Home"
@@ -16,7 +15,7 @@ export const RoutesPath = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='*' element={<Home />} />
+        {/* <Route path='*' element={<Home />} /> */}
         <Route path='/product/:id' element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
