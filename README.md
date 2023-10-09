@@ -14,7 +14,7 @@
 ## Step 5: SidebarContext
 
 ## Step 6: CartContext 
-// Pendiente ERROR - LINK (dentro carrito)  => Revisar useParams() para hacer rutas DINAMICAS
+// Pendiente de utilizar useParams() ???? 
 
 ## Step 7: Funciones '+' '-'
 // Pendiente REVISAR TYPES...con los EXPORTS (unificar TODO)
@@ -32,3 +32,9 @@ minuto 1:40:49
 - BUSCADOR VALENZUELA
 - FILTRO MIDUDEZ
 - FILTRO FIZ..por CATEGORIAS ..con diferentes ICONOS**
+
+
+## To DO - 
+- Cuando este acabado el video e-commerce 
+- Revisar LOOM 3.1 Live-Coding: Dynamic Routes and others para mejorar errores 
+- 

@@ -27,7 +27,7 @@ export type productContextType = {
 export const productContext = createContext({});
 export const ProductProvider: FC<ProductProviderProps> = ({children}) => {
   //products state
-  const [products, setProducts] = useState<Array<productType>>([])
+  const [products, setProducts] = useState([])
   //fetch products 
   useEffect(() => {
     const fetchProducts = async () => {

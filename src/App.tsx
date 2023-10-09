@@ -1,8 +1,8 @@
 // import 
 import './App.css'
-import { Footer } from './components/Footer'
-import { Header } from './components/Header'
-import { Sidebar } from './components/Sidebar'
+// import { Footer } from './components/Footer'
+// import { Header } from './components/Header'
+// import { Sidebar } from './components/Sidebar'
 import { RoutesPath } from './routes/Routes'
 
 // type 
@@ -12,10 +12,7 @@ function App() {
  
   return (
     <>
-    <Header />
-    <Sidebar />
     <RoutesPath />
-    <Footer />
     </>
   )
 }
