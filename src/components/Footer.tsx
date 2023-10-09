@@ -7,6 +7,6 @@
 // function
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <div> I'm a Footer</div>
   )
 }

@@ -4,7 +4,7 @@ import { FC, useEffect } from "react"
 import { CartProviderProps } from "../types/CartProviderProps"
 import { createContext } from "react"
 import { useState } from "react"
-import { ProductType } from "../components/Product"
+import { ProductTypeProps } from "../components/Product"
 
 export type CartContextType = {
   addToCart: (value: {}) => void
@@ -13,7 +13,7 @@ export type CartContextType = {
 // function
 export const CartContext = createContext({})
 export const CartProvider:FC<CartProviderProps> = ({children}) => {
-  const [cart, setCart] = useState<ProductType[]>([])
+  const [cart, setCart] = useState<ProductTypeProps[]>([])
   // item amount state
   const [itemAmount, setItemAmount] = useState(0)
 
@@ -28,10 +28,6 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
   });
 
 
-
-
-
-
   //update itemAmount
   useEffect(() => {
     if(cart) {
@@ -44,17 +40,17 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
   )
 
   //function addToCart
-  const addToCart = (product:ProductType) => {
+  const addToCart = (product:ProductTypeProps) => {
 
-    const newItem: ProductType = {... product, amount: 1 }
+    const newItem: ProductTypeProps = {... product, amount: 1 }
 
     // check if the item alredy in the cart
-    const cartItem = cart.find((item:ProductType) => {
+    const cartItem = cart.find((item:ProductTypeProps) => {
       return item.id === product.id;
     })
 
     if(cartItem) {
-      const newCart = [...cart].map((item: ProductType) => {
+      const newCart = [...cart].map((item: ProductTypeProps) => {
         if(item.id === product.id) {
           return {...item, amount: item.amount + 1 }
         }else {

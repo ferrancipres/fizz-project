@@ -5,7 +5,7 @@ import { CartContext } from "../context/CartContext"
 import {useContext } from "react"
 import { CartContextType } from "../context/CartContext"
 
-export interface ProductType {
+export type ProductTypeProps = {
   id: number;
   image: string;
   category: string;
@@ -16,7 +16,7 @@ export interface ProductType {
 
 // function
 // pendiente problema tipado
-export const Product = ({product}: {product: ProductType}) => {
+export const Product = ({product}: {product: ProductTypeProps}) => {
 
   //destructure product
   const {id, image, category, title, price} = product
@@ -28,7 +28,9 @@ export const Product = ({product}: {product: ProductType}) => {
         <div className='w-full h-full flex justify-center items-center'>
           {/* image */}
           <div className='w-[200px] max-auto flex justify-center items-center'>
-            <img className='max-h-[160px] group-hover:scale-110 transition duration-300' src={image} alt={title} />
+            <Link to={`/product/${id}`}>
+              <img className='max-h-[160px] group-hover:scale-110 transition duration-300' src={image} alt={title} />
+            </Link>
           </div>
         </div>
         {/* button */}
@@ -47,7 +49,7 @@ export const Product = ({product}: {product: ProductType}) => {
       <div>
         <div className='text-sm capitalize text-gray-500'>{category}</div>
         <Link to={`/product/${id}`}>
-          <h3 className='font-bold mb-1'>{title}</h3>
+          <h3 className='font-medium mb-1'>{title}</h3>
         </Link>
         <div className='font-semibold'>{price}€</div>
       </div>

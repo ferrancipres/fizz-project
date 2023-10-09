@@ -14,7 +14,7 @@
 ## Step 5: SidebarContext
 
 ## Step 6: CartContext 
-// Pendiente ERROR - LINK (dentro carrito)
+// Pendiente ERROR - LINK (dentro carrito)  => Revisar useParams() para hacer rutas DINAMICAS
 
 ## Step 7: Funciones '+' '-'
 // Pendiente REVISAR TYPES...con los EXPORTS (unificar TODO)
@@ -27,3 +27,8 @@ minuto 1:21:28 ..
 ## Step 9: Hero 
 minuto 1:40:49 
 // 
+
+## Extra
+- BUSCADOR VALENZUELA
+- FILTRO MIDUDEZ
+- FILTRO FIZ..por CATEGORIAS ..con diferentes ICONOS**

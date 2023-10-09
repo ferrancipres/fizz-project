@@ -6,6 +6,9 @@ import { FC, useContext } from "react";
 import { productType } from "../context/ProductContext"
 import {IoMdClose, IoMdRemove, IoMdAdd} from 'react-icons/io'
 import { CartContext } from "../context/CartContext";
+// import { Product } from "./Product";
+// import { Link } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 
 // type
 // type Props = {}
@@ -28,6 +31,7 @@ export const CartItem: FC<CartItemProps> = ({item}) => {
   // destructure item
   const {id, title, image, price, amount} = item
   const {removeFromCart, increaseAmount, decreaseAmount} = useContext(CartContext) as CartContextType
+
 
   return (
     <div className='flex gap-x-4 py-2 lg:px-6 border-b border-gray-200 w-full font-light text-gray-500'>

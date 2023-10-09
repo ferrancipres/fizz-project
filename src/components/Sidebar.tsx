@@ -42,7 +42,7 @@ export const Sidebar = () => {
             {/* total */}
             <div className='upppercase font-semibold'>
               <span className='mr-2 uppercase'>Total:</span>
-              $ {parseFloat((total).toString()).toFixed(2)}
+            $ {parseFloat((total).toString()).toFixed(2)}
             </div>
           
             {/* clear cart */}

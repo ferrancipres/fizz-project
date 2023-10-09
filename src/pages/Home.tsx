@@ -14,6 +14,7 @@ export const Home = () => {
 //useContext Products
 // Pendiente de revisar
 const { products} = useContext(productContext) as productContextType
+console.log(products)
 // get only men's & women clothes
 // revisar type item
 const filteredProducts = products.filter((item)  => {

@@ -4,15 +4,11 @@ import { useContext, useEffect, useState } from "react"
 import { SidebarContext } from "../context/SidebarContext"
 import { SidebarContextType } from "../types/SidebarContextType"
 import { CartContext } from "../context/CartContext"
-
-// import icons
 import {BsBag} from 'react-icons/bs'
 
 export type HeaderContextType = {
   itemAmount: number,
 }
-// type
-// type Props = {}
 
 // function
 export const Header = () => {
