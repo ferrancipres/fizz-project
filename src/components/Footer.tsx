@@ -1,12 +1,12 @@
-// import 
-// import React from 'react'
 
-// type
-// type Props = {}
 
 // function
 export const Footer = () => {
   return (
-    <div> I'm a Footer</div>
+    <footer className='bg-black py-12'>
+      <div className='container mx-auto'>
+        <p className='text-white text-center'>Copyright &copy; Ecommerce Shop 2023. All rights reserved.</p>
+      </div>
+    </footer>
   )
 }

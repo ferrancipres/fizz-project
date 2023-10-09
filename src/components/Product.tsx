@@ -1,26 +1,20 @@
-// import 
+
+// import react
+import { useContext } from "react"
 import { Link } from "react-router-dom"
 import {BsPlus, BsEyeFill} from 'react-icons/bs'
-import { CartContext } from "../context/CartContext"
-import {useContext } from "react"
-import { CartContextType } from "../context/CartContext"
 
-export type ProductTypeProps = {
-  id: number;
-  image: string;
-  category: string;
-  title: string;
-  price: number;
-  amount: number;
-}
+// import context
+import { CartContext } from "../context/CartContext"
+
+// import type
+import { CartItemType } from "../types/CartItemType"
+import { ProductTypeProps } from "../types/ProductTypeProps"
 
 // function
-// pendiente problema tipado
 export const Product = ({product}: {product: ProductTypeProps}) => {
-
-  //destructure product
   const {id, image, category, title, price} = product
-  const {addToCart} = useContext(CartContext) as CartContextType
+  const {addToCart} = useContext(CartContext) as CartItemType
 
   return (
     <div>

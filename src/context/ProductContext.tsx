@@ -1,27 +1,9 @@
-// import 
+
 // import context, useEffect, useState
-import { createContext, useEffect, useState} from "react"
+import { FC, createContext, useEffect, useState} from "react"
 
 // import type
 import { ProductProviderProps } from "../types/ProductProviderProps";
-
-// import functional components
-import { FC } from "react";
-
-// type
-export type productType =  {
-  id: number,
-  image: string,
-  category: string, 
-  title: string,
-  price: number,
-  amount: number
-}
-
-export type productContextType = {
-  products: Array<productType>
-  setProducts: (value: Array<productType>) => void
-}
 
 // function
 export const productContext = createContext({});

@@ -1,23 +1,16 @@
 // import 
 // import React from 'react'
-import { FC, useEffect } from "react"
-import { CartProviderProps } from "../types/CartProviderProps"
-import { createContext } from "react"
-import { useState } from "react"
-import { ProductTypeProps } from "../components/Product"
+import { FC, useEffect, createContext, useState } from "react"
 
-export type CartContextType = {
-  addToCart: (value: {}) => void
-}
+// import type
+import { CartProviderProps } from "../types/CartProviderProps"
+import { ProductTypeProps } from "../types/ProductTypeProps"
 
 // function
 export const CartContext = createContext({})
 export const CartProvider:FC<CartProviderProps> = ({children}) => {
   const [cart, setCart] = useState<ProductTypeProps[]>([])
-  // item amount state
   const [itemAmount, setItemAmount] = useState(0)
-
-  // tota price state
   const [total, setTotal] = useState(0)
 
   useEffect(() => {

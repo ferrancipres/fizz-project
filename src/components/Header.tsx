@@ -1,21 +1,21 @@
-// import 
-// import React from 'react'
-import { useContext, useEffect, useState } from "react"
-import { SidebarContext } from "../context/SidebarContext"
-import { SidebarContextType } from "../types/SidebarContextType"
-import { CartContext } from "../context/CartContext"
-import {BsBag} from 'react-icons/bs'
 
-export type HeaderContextType = {
-  itemAmount: number,
-}
+// import react
+import { useContext, useEffect, useState } from "react"
+import { BsBag } from 'react-icons/bs'
+
+// import context
+import { SidebarContext } from "../context/SidebarContext"
+import { CartContext } from "../context/CartContext"
+
+//import type
+import { CartItemType } from "../types/CartItemType"
+import { SidebarContextType } from "../types/SidebarContextType"
 
 // function
 export const Header = () => {
-  // Header state
   const [isActive, setIsActive] = useState(false)
   const {isOpen,setIsOpen} = useContext(SidebarContext) as SidebarContextType
-  const {itemAmount} = useContext(CartContext) as HeaderContextType
+  const {itemAmount} = useContext(CartContext) as CartItemType
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -27,7 +27,7 @@ export const Header = () => {
     <header className= {`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all px-4`}>
       <div className='container mx-auto flex items-center justify-between h-full'>
         {/* logo */}
-        <div>I'm a Header</div>
+        <div>LOGO</div>
         {/* car */}
         <div onClick={() => setIsOpen(!isOpen)} className='cursor-pointer flex relative' >
           <BsBag className='text-2xl' />

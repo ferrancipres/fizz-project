@@ -1,37 +1,22 @@
-// PENDIENTE LINK - IMAGEN & TITULO - NO ENTIENDO ERROR
 
-//import 
-//import React from 'react'
-import { FC, useContext } from "react";
-import { productType } from "../context/ProductContext"
-import {IoMdClose, IoMdRemove, IoMdAdd} from 'react-icons/io'
-import { CartContext } from "../context/CartContext";
-// import { Product } from "./Product";
+// import react
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-// import { useParams } from "react-router-dom";
 
-// type
-// type Props = {}
-export type CartItemProps = {
-  item: productType;  // Ajusta ProductType según tu estructura
-  key: number;
-}
+// import icon
+import { IoMdClose, IoMdRemove, IoMdAdd } from 'react-icons/io'
 
-export type CartContextType = {
-  cart: productType[],
-  removeFromCart: (value: {}) => void,
-  clearCart: (value:{}) => void,
-  increaseAmount: (value: {}) => void,
-  decreaseAmount: (value: {}) => void,
-  total: number,
-}
+// import context
+import { CartContext } from "../context/CartContext";
+
+// import type
+import { CartItemProps } from "../types/CartItemProps";
+import { CartItemType } from "../types/CartItemType";
 
 // function
-export const CartItem: FC<CartItemProps> = ({item}) => {
-  // destructure item
+export const CartItem = ({ item }:{item: CartItemProps }) => {
   const {id, title, image, price, amount} = item
-  const {removeFromCart, increaseAmount, decreaseAmount} = useContext(CartContext) as CartContextType
-
+  const { removeFromCart, increaseAmount, decreaseAmount } = useContext(CartContext) as CartItemType
 
   return (
     <div className='flex gap-x-4 py-2 lg:px-6 border-b border-gray-200 w-full font-light text-gray-500'>

@@ -35,6 +35,9 @@ minuto 1:40:49
 
 
 ## To DO - 
-- Cuando este acabado el video e-commerce 
+- Limpiar código (No ERRORES)
+- Pendiente REVISAR 2 errores "Product Details"
+- Pendiente REVISAR CSS + NAVEGACION WEB 
+- PUZZLES..PENDIENTE DE VER ***git 
+- Revisar VIDEO VALENZUELA ***
 - Revisar LOOM 3.1 Live-Coding: Dynamic Routes and others para mejorar errores 
-- 
