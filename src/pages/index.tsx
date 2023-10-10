@@ -1,3 +1,3 @@
 export * from './Home/Home'
-export * from './Cart/CheckoutPage'
-export * from './Product/ProductDetails'
+export * from './Checkout/Checkout'
+export * from './Product/Product'

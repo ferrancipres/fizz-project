@@ -3,22 +3,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 // import pages
-import { Home, ProductDetails, CheckoutPage } from "../pages"
-import { Layout } from "../components"
-import { Login } from "../pages/Log/Login"
+import { Home} from "../pages"
+import { ProductDetails } from "../components/Product/ProductDetails"
+import {Checkout} from '../pages/Checkout/Checkout'
+
 
 // function
 export const RoutesPath = () => {
   return (
     <BrowserRouter>
-      {/* <Layout> */}
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/checkout' element={<CheckoutPage />} />
-          <Route path='/product/:id' element={<ProductDetails />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/checkout' element={<Checkout />} />
+          <Route path='/product/:title' element={<ProductDetails />} />
         </Routes>
-      {/* </Layout> */}
     </BrowserRouter>
   )
 }
