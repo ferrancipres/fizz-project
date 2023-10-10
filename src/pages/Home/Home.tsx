@@ -21,7 +21,6 @@ const filteredProducts = products.filter((item:ProductTypeProps)  => {
 
   return (
       <div>
-        {/* <Header /> */}
         <Hero />
         <section className='py-16'>
           <div className='container mx-auto'>

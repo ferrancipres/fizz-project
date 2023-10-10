@@ -53,12 +53,13 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
       const newCart = [...cart].map((item: ProductTypeProps) => {
         if(item.id === product.id) {
           return {...item, amount: item.amount + 1 }
-        }else {
-          return item
         }
+          return item
       })
       setCart(newCart)
-    } else {
+    } 
+    
+    if(!cartItem) {
       setCart([...cart, newItem]) 
     }
   }

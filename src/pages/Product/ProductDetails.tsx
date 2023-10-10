@@ -11,15 +11,16 @@ import { CartItemType, ProductContextType } from '../../types';
 
 // function
 export const ProductDetails = () => {
-  const {id} = useParams();
+  const {id:productID} = useParams();
+  console.log(productID)
   const { products } = useContext(productContext) as ProductContextType
   const { addToCart } = useContext(CartContext) as CartItemType
-
+  console.log(products)
   //get the single product based on the id
   //pendiente revisar
-  const product = products.find((item) => {
-    return item.id === parseInt(id);
-  })
+  const product = products
+  ? products.find((product) => { return product.category === productID;})
+  : null
 
   //if product is not found
   if(!product) {
@@ -49,7 +50,7 @@ export const ProductDetails = () => {
               $ {price}
             </div>
             <p className='mb-4'>{description}</p>
-            <button onClick={() => addToCart(product, product.id)} className='bg-black py-4 px-8 text-white mb-6'>Add to cart</button>
+            <button onClick={() => addToCart(product)} className='bg-black py-4 px-8 text-white mb-6'>Add to cart</button>
           </div>
         </div>
       </div>

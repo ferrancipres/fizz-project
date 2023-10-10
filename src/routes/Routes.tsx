@@ -20,3 +20,6 @@ export const RoutesPath = () => {
     </BrowserRouter>
   )
 }
+
+
+// No tiene sentido Layout 

@@ -18,7 +18,6 @@ export const ProductProvider: FC<ProductProviderProps> = ({children}) => {
       setProducts(data);
     }
     fetchProducts();
-
   },[])
 
   return (
