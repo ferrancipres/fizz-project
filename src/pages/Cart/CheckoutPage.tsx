@@ -1,14 +1,16 @@
 // import React from 'react'
 
-import { Layout, Checkout } from '../../components'
+import { Checkout, Header, Footer } from '../../components'
 import { FC } from "react"
 
 export const CheckoutPage:FC = () => {
   return (
-   <>
-    <Layout>
+    <>
+      <Header />
+      <section>
         <Checkout />
-    </Layout>
-   </>
+      </section>
+      <Footer />
+    </>
   )
 }

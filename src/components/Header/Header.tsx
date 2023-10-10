@@ -2,12 +2,14 @@
 // import react
 import { FC, useContext, useEffect, useState } from 'react'
 import { BsBag } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 // import context
 import { SidebarContext, CartContext } from '../../context'
 
 //import type
 import { CartItemType, SidebarContextType } from '../../types'
+
 
 // function
 export const Header: FC = () => {
@@ -22,10 +24,12 @@ export const Header: FC = () => {
   })
 
   return (
-    <header className= {`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all px-4`}>
+    <header className={`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all px-4`}>
       <div className='container mx-auto flex items-center justify-between h-full'>
         {/* logo */}
-        <div>LOGO</div>
+        <div>
+          <Link to={'/'}>LOGO</Link>
+        </div>
         {/* car */}
         <div onClick={() => setIsOpen(!isOpen)} className='cursor-pointer flex relative' >
           <BsBag className='text-2xl' />

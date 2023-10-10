@@ -4,6 +4,8 @@
 
 export const Checkout = () => {
   return (
-    <div>Checkout</div>
+    <div className=' bg-pink-200 h-[500px] mt-'>
+      Checkout 
+    </div>
   )
 }
