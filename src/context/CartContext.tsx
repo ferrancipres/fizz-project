@@ -1,10 +1,9 @@
 // import 
 // import React from 'react'
-import { FC, useEffect, createContext, useState } from "react"
+import { FC, useEffect, createContext, useState } from 'react'
 
 // import type
-import { CartProviderProps } from "../types/CartProviderProps"
-import { ProductTypeProps } from "../types/ProductTypeProps"
+import { CartProviderProps, ProductTypeProps } from '../types'
 
 // function
 export const CartContext = createContext({})

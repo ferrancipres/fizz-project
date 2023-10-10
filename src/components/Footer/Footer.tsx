@@ -1,7 +1,8 @@
+import { FC } from "react"
 
 
 // function
-export const Footer = () => {
+export const Footer: FC = () => {
   return (
     <footer className='bg-black py-12'>
       <div className='container mx-auto'>

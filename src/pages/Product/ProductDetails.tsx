@@ -4,12 +4,10 @@ import { useContext } from "react";
 import { useParams } from "react-router-dom"
 
 // import context
-import { productContext } from "../context/ProductContext";
-import { CartContext} from "../context/CartContext";
+import { productContext, CartContext } from '../../context';
 
 // import type
-import { CartItemType } from "../types/CartItemType";
-import { ProductContextType } from "../types/ProductContextType";// type
+import { CartItemType, ProductContextType } from '../../types';
 
 // function
 export const ProductDetails = () => {

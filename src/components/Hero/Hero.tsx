@@ -1,8 +1,8 @@
-// import icon
+// import react
 import { Link } from 'react-router-dom'
 
 // import img
-import asdasd from '../assets/img/asdasd.png'
+import asdasd from '../../assets/img/asdasd.png'
 
 export const Hero = () => {
   return (

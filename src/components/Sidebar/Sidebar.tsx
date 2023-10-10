@@ -1,10 +1,9 @@
 // import 
 // import context
-import { SidebarContext } from "../context/SidebarContext"
+import { SidebarContext, CartContext } from '../../context'
 
 // import type
-import { SidebarContextType } from "../types/SidebarContextType";
-import { ProductTypeProps } from "../types/ProductTypeProps";
+import { SidebarContextType, ProductTypeProps, CartItemType } from "../../types";
 
 // import react
 import { useContext } from "react"
@@ -14,12 +13,8 @@ import { Link } from "react-router-dom";
 import {IoMdArrowForward} from 'react-icons/io'
 import {FiTrash2} from 'react-icons/fi'
 
-// import context
-import { CartContext } from "../context/CartContext"
-
-// import type
-import { CartItem } from "../components/CartItem"
-import { CartItemType } from "../types/CartItemType";
+// import components
+import { CartItem } from '../../components'
 
 // function
 export const Sidebar = () => {

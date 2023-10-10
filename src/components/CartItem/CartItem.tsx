@@ -1,17 +1,16 @@
 
 // import react
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 // import icon
 import { IoMdClose, IoMdRemove, IoMdAdd } from 'react-icons/io'
 
 // import context
-import { CartContext } from "../context/CartContext";
+import { CartContext } from '../../context';
 
 // import type
-import { CartItemProps } from "../types/CartItemProps";
-import { CartItemType } from "../types/CartItemType";
+import { CartItemProps, CartItemType } from '../../types';
 
 // function
 export const CartItem = ({ item }:{item: CartItemProps }) => {

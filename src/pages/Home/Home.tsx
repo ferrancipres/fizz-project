@@ -2,20 +2,16 @@
 import {useContext} from 'react'
 
 // import product context
-import { productContext } from '../context/ProductContext'
+import { productContext } from '../../context'
 
 // import components
-import { Product } from '../components/Product'
-import { Hero } from '../components/Hero'
+import { Product, Hero } from '../../components'
 
 // import type
-import { ProductContextType } from '../types/ProductContextType'
-import { ProductTypeProps } from '../types/ProductTypeProps'
+import { ProductTypeProps, ProductContextType } from '../../types'
 
 // function
 export const Home = () => {
-//useContext Products
-// Pendiente de revisar
 const { products} = useContext(productContext) as ProductContextType
 const filteredProducts = products.filter((item:ProductTypeProps)  => {
   return (

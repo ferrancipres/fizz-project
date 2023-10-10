@@ -1,18 +1,16 @@
 
 // import react
-import { useContext, useEffect, useState } from "react"
+import { FC, useContext, useEffect, useState } from 'react'
 import { BsBag } from 'react-icons/bs'
 
 // import context
-import { SidebarContext } from "../context/SidebarContext"
-import { CartContext } from "../context/CartContext"
+import { SidebarContext, CartContext } from '../../context'
 
 //import type
-import { CartItemType } from "../types/CartItemType"
-import { SidebarContextType } from "../types/SidebarContextType"
+import { CartItemType, SidebarContextType } from '../../types'
 
 // function
-export const Header = () => {
+export const Header: FC = () => {
   const [isActive, setIsActive] = useState(false)
   const {isOpen,setIsOpen} = useContext(SidebarContext) as SidebarContextType
   const {itemAmount} = useContext(CartContext) as CartItemType

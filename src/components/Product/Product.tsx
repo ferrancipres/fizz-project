@@ -1,15 +1,14 @@
 
 // import react
-import { useContext } from "react"
-import { Link } from "react-router-dom"
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import {BsPlus, BsEyeFill} from 'react-icons/bs'
 
 // import context
-import { CartContext } from "../context/CartContext"
+import { CartContext } from '../../context'
 
 // import type
-import { CartItemType } from "../types/CartItemType"
-import { ProductTypeProps } from "../types/ProductTypeProps"
+import { CartItemType, ProductTypeProps } from '../../types'
 
 // function
 export const Product = ({product}: {product: ProductTypeProps}) => {

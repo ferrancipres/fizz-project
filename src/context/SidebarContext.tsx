@@ -1,9 +1,9 @@
 // import 
 // import FC, context, useState
-import { FC, createContext, useState} from "react"
+import { FC, createContext, useState} from 'react'
 
 // import type
-import { SidebarProviderProps } from "../types/SidebarProviderProps";
+import { SidebarProviderProps } from '../types';
 
 // function
 export const SidebarContext = createContext({});

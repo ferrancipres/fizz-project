@@ -1,9 +1,9 @@
 
 // import context, useEffect, useState
-import { FC, createContext, useEffect, useState} from "react"
+import { FC, createContext, useEffect, useState} from 'react'
 
 // import type
-import { ProductProviderProps } from "../types/ProductProviderProps";
+import { ProductProviderProps } from '../types';
 
 // function
 export const productContext = createContext({});
