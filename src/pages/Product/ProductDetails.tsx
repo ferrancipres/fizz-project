@@ -12,23 +12,12 @@ import { Footer, Header, Sidebar } from "../../components";
 
 // function
 export const ProductDetails = () => {
-<<<<<<< HEAD
-  const {id:productID} = useParams();
-  console.log(productID)
-=======
   const {id: productID} = useParams();
->>>>>>> dev_test
   const { products } = useContext(productContext) as ProductContextType
   const { addToCart } = useContext(CartContext) as CartItemType
   //get the single product based on the id
-<<<<<<< HEAD
-  //pendiente revisar
-  const product = products
-  ? products.find(({id}) => { return id === productID;})
-=======
   const product = products
   ? products.find(({id}) => id === parseInt(productID as string))
->>>>>>> dev_test
   : null
 
   console.log(product)
@@ -66,11 +55,6 @@ export const ProductDetails = () => {
               <p className='mb-4'>{description}</p>
               <button onClick={() => addToCart(product)} className='bg-black py-4 px-8 text-white mb-6'>Add to cart</button>
             </div>
-<<<<<<< HEAD
-            <p className='mb-4'>{description}</p>
-            <button onClick={() => addToCart(product)} className='bg-black py-4 px-8 text-white mb-6'>Add to cart</button>
-=======
->>>>>>> dev_test
           </div>
         </div>
       </section>

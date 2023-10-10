@@ -22,10 +22,7 @@ const filteredProducts = products.filter((item:ProductTypeProps)  => {
 
   return (
       <div>
-<<<<<<< HEAD
-=======
         <Header />
->>>>>>> dev_test
         <Hero />
         <Sidebar />
         <section className='py-16'>
