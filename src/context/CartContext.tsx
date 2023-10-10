@@ -5,20 +5,28 @@ import { FC, useEffect, createContext, useState } from 'react'
 // import type
 import { CartProviderProps, ProductTypeProps } from '../types'
 
+// upload information from LocalStorage
+const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]' )
+
 // function
 export const CartContext = createContext({})
 export const CartProvider:FC<CartProviderProps> = ({children}) => {
-  const [cart, setCart] = useState<ProductTypeProps[]>([])
+  const [cart, setCart] = useState<ProductTypeProps[]>(cartFromLocalStorage)
   const [itemAmount, setItemAmount] = useState(0)
   const [total, setTotal] = useState(0)
 
+  // function to save information to LocalStorage
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart))
+  },[cart])
+
+ // function to calculate total
   useEffect(() => {
     const total = cart.reduce((accumulator, currentItem) => {
       return accumulator + currentItem.price * currentItem.amount
     }, 0);
     setTotal(total)
   });
-
 
   //update itemAmount
   useEffect(() => {
