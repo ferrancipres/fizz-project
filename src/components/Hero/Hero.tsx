@@ -6,7 +6,7 @@ import asdasd from '../../assets/img/asdasd.png'
 
 export const Hero = () => {
   return (
-    <section className='h-[800px] bg-hero bg-no-repeat bg-cover bg-center py-24'>
+    <section className='h-[400px] bg-hero bg-no-repeat bg-cover bg-center py-24'>
       <div className='container-mx-auto flex justify-around h-full'>
         
         {/* text */}
@@ -27,7 +27,7 @@ export const Hero = () => {
 
         {/* image */}
         <div className='hidden lg:block'>
-          <img src={asdasd} alt='' />
+          <img className='w-24' src={asdasd} alt='' />
         </div>
       </div>
     </section>

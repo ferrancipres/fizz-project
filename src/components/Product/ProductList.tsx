@@ -11,8 +11,8 @@ import { CartContext } from '../../context'
 import { CartItemType, ProductTypeProps } from '../../types'
 
 // function
-export const Product = ({product}: {product: ProductTypeProps}) => {
-  const {id, image, category, title, price} = product
+export const ProductList = ({product}: {product: ProductTypeProps}) => {
+  const {image, category, title, price} = product
   const {addToCart} = useContext(CartContext) as CartItemType
 
   return (
@@ -21,7 +21,7 @@ export const Product = ({product}: {product: ProductTypeProps}) => {
         <div className='w-full h-full flex justify-center items-center'>
           {/* image */}
           <div className='w-[200px] max-auto flex justify-center items-center'>
-            <Link to={`/product/${id}`}>
+            <Link to={`/product/${title}`}>
               <img className='max-h-[160px] group-hover:scale-110 transition duration-300' src={image} alt={title} />
             </Link>
           </div>
@@ -33,7 +33,7 @@ export const Product = ({product}: {product: ProductTypeProps}) => {
               <BsPlus className='text-3xl' />
             </div>  
           </button>
-          <Link to={`/product/${id}`} className='w-12 h-12 bg-white flex justify-center items-center text-black drop-shadow-xl'>
+          <Link to={`/product/${title}`} className='w-12 h-12 bg-white flex justify-center items-center text-black drop-shadow-xl'>
             <BsEyeFill />
           </Link>
         </div>
@@ -41,7 +41,7 @@ export const Product = ({product}: {product: ProductTypeProps}) => {
       {/* Category & Title & Price */}
       <div>
         <div className='text-sm capitalize text-gray-500'>{category}</div>
-        <Link to={`/product/${id}`}>
+        <Link to={`/product/${title}`}>
           <h3 className='font-medium mb-1'>{title}</h3>
         </Link>
         <div className='font-semibold'>{price}€</div>
