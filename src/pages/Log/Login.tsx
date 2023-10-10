@@ -1,11 +1,11 @@
-// import React from 'react'
+// // import React from 'react'
 
-// type Props = {}
+// // type Props = {}
 
-export const Login = () => {
-  return (
-    <>
-      <h1>I'm a login</h1>
-    </>
-  )
-}
+// export const Login = () => {
+//   return (
+//     <div className='grid grid-cols-1 sm: grid-cols-2'>
+//       <img src={} alt='' />
+//     </div>
+//   )
+// }
