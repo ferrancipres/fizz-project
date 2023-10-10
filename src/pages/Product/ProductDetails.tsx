@@ -15,18 +15,19 @@ export const ProductDetails = () => {
   console.log(productID)
   const { products } = useContext(productContext) as ProductContextType
   const { addToCart } = useContext(CartContext) as CartItemType
-  console.log(products)
   //get the single product based on the id
   //pendiente revisar
   const product = products
-  ? products.find((product) => { return product.category === productID;})
+  ? products.find(({id}) => { return id === productID;})
   : null
 
+  console.log(product)
   //if product is not found
   if(!product) {
-    return (
-      <section className='h-screen flex justify-center items-center'>Loading...</section>
-    )
+    return null
+    // return (
+      // <section className='h-screen flex justify-center items-center'>Loading...</section>
+    // )
   }
 
   // desctructure product
