@@ -5,7 +5,8 @@ import {useContext} from 'react'
 import { productContext } from '../../context'
 
 // import components
-import { Product, Hero } from '../../components'
+import { Product, Hero, Footer, Sidebar } from '../../components'
+import { Header } from '../../components'
 
 // import type
 import { ProductTypeProps, ProductContextType } from '../../types'
@@ -21,7 +22,12 @@ const filteredProducts = products.filter((item:ProductTypeProps)  => {
 
   return (
       <div>
+<<<<<<< HEAD
+=======
+        <Header />
+>>>>>>> dev_test
         <Hero />
+        <Sidebar />
         <section className='py-16'>
           <div className='container mx-auto'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0 '>
@@ -31,6 +37,7 @@ const filteredProducts = products.filter((item:ProductTypeProps)  => {
             </div>
           </div>
         </section>
+      <Footer />
       </div>    
   )
 }

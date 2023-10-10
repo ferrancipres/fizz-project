@@ -9,6 +9,8 @@ import { SidebarProviderProps } from '../types';
 export const SidebarContext = createContext({});
 export const SidebarProvider:FC<SidebarProviderProps> = ({children}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  // estado del modal 
   const handleClose = () => {
     setIsOpen (false) 
   }
