@@ -22,7 +22,12 @@
 # React + TypeScript + Vite = fizz-proejct
 - Disponibilidad -MIERCOLES (8 a 12) & JUEVES **
 
-
+## To DO
+- Log in 
+- Log out
+- Create account
+- Iniciar sesion 
+- Checkout..page..+ Shipping Form + Select payment..+ Final page..to return HOME
 
 ######
 Welcome back, username - Logout

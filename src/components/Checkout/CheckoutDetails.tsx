@@ -5,7 +5,7 @@
 export const CheckoutDetails = () => {
   return (
     <div className=' bg-pink-200 h-[500px] mt-'>
-      Checkout 
+      I'm a checkout
     </div>
   )
 }

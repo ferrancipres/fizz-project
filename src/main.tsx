@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <SidebarProvider> 
         <CartProvider>
             <ProductProvider>
-                <App />
+                    <App />
             </ProductProvider>
         </CartProvider>
     </SidebarProvider>

@@ -25,10 +25,6 @@ export const ProductProvider: FC<ProductProviderProps> = ({children}) => {
     } catch {
       throw new Error ('There is an error')
     }
-<<<<<<< HEAD
-    fetchProducts();
-=======
->>>>>>> dev_test
   },[])
 
   return (
