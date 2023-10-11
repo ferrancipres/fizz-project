@@ -124,5 +124,3 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
     </CartContext.Provider>
   )
 }
-
-// minuto 1:08:03 - CartContext

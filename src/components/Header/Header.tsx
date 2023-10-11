@@ -11,11 +11,12 @@ import { SidebarContext, CartContext } from '../../context'
 import { CartItemType, SidebarContextType } from '../../types'
 import { AuthContext } from '../../auth/context/authContext'
 
-export type AuthContextType = {
-  isLogged: boolean;
-  login: string,
-  logout: string
-}
+// export type AuthContextType = {
+//   isLogged: boolean;
+//   login: () => void
+//   logout: () => void
+// }
+
 
 // function
 export const Header: FC = () => {
@@ -23,7 +24,6 @@ export const Header: FC = () => {
   const {isOpen,setIsOpen} = useContext(SidebarContext) as SidebarContextType
   const {itemAmount} = useContext(CartContext) as CartItemType
   const {isLogged, login, logout} = useContext(AuthContext)
-  console.log(isLogged)
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -38,7 +38,7 @@ export const Header: FC = () => {
         <div className='mt-10'>
           {isLogged ?
             <button onClick={logout}>Logout</button> :
-            <button onClick={() =>login('name')}>Login</button>
+            <button onClick={() =>login()}>Login</button>
           }
         </div>
         <div>
