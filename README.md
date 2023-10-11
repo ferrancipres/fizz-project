@@ -1,8 +1,5 @@
-# Miercoles 11 Octu 
-- Edpuzzle 1
-- Edpuzzle 2 
-
 # To do EXTRA 
+- problema MODAL***
 - Pendiente REVISAR CSS + NAVEGACION WEB 
 - Logo  ***
 - Video (CAM) / Modificar HOME ***
@@ -12,22 +9,17 @@
 - Quizás intentaría que el html fuese más semántico en algunas partes porque google lo penaliza mucho 
 - He visto algún que otro useEffect con su array de dependencias vacío, Siempre rellenarlo con algún estado
 - db.json (personal)
-- La pagina de ProductDetails no debería de existir..debería ser un componente en productDetails
 - Checkout ( No sé como desactivar el botón)
-- botón back dentro del producto (con historial..tiene un nombre)
 
 # To do EXTRA - VALENZUELA (tutoria)
-- 
+- Tengo 2 errores en el header (login, logout)
 
 # React + TypeScript + Vite = fizz-proejct
 - Disponibilidad -MIERCOLES (8 a 12) & JUEVES **
 
 ## To DO
-- Log in 
-- Log out
+- btn 'login' 'logout'
 - Create account
 - Iniciar sesion 
 - Checkout..page..+ Shipping Form + Select payment..+ Final page..to return HOME
-
-######
-Welcome back, username - Logout
+- Welcome back, username - Logout

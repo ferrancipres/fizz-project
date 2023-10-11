@@ -6,7 +6,7 @@ import { SidebarContext, CartContext } from '../../context'
 import { SidebarContextType, ProductTypeProps, CartItemType } from "../../types";
 
 // import react
-import { useContext, useState } from "react"
+import { useContext} from "react"
 import { Link } from "react-router-dom";
 
 // import icon
@@ -14,14 +14,14 @@ import {IoMdArrowForward} from 'react-icons/io'
 import {FiTrash2} from 'react-icons/fi'
 
 // import components
-import { CartItem, Modal } from '../../components'
+import { CartItem} from '../../components'
 
 // function
 export const Sidebar = () => {
   const { cart, clearCart, total, itemAmount } = useContext(CartContext) as CartItemType
   const { isOpen, setIsOpen } = useContext(SidebarContext) as SidebarContextType
   // const [showModal, setShowModal] = useState<boolean>(false)
-  const [showModal, setShowModal] = useState<boolean>(false)
+  // const [showModal, setShowModal] = useState<boolean>(false)
 
   return (
       <div className={`${isOpen ? 'right-0' : '-right-full'} w-full bg-white fixed top-0 h-full shadow-2xl md:w-[35vw] xl:max-w-[30vw] transition-all duration-300 z-20 px-4 lg:px-[35px]`}>
@@ -52,11 +52,17 @@ export const Sidebar = () => {
             </div>
           </div>
         <Link to={'/'} className='bg-gray-200 flex p-4 justify-center items-center text-black w-full font-medium' >View cart</Link>
-        <button onClick={() => setShowModal(true)} 
-        className='bg-black text-white flex p-4 justify-center items-center w-full font-medium'>Checkout</button>
+        {/* <button onClick={() => setShowModal(true)} 
+        className='bg-black text-white flex p-4 justify-center items-center w-full font-medium'>Checkout</button> */}
+
+        <Link to={'/checkout'}>
+          <button
+            className='bg-black text-white flex p-4 justify-center items-center w-full font-medium'>Checkout</button>
+        </Link>
+
         
         {/* // function modal  */}
-        <Modal isVisible={showModal} onClose={() => setShowModal(false)} />
+        {/* <Modal isVisible={showModal} onClose={() => setShowModal(false)} /> */}
         </div>
       </div>
   )

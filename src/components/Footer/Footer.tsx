@@ -1,6 +1,5 @@
 import { FC } from "react"
 
-
 // function
 export const Footer: FC = () => {
   return (

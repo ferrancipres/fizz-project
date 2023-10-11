@@ -1,9 +1,6 @@
 // import 
 import './App.css'
-// import { Footer } from './components/Footer'
-// import { Header } from './components/Header'
-// import { Sidebar } from './components/Sidebar'
-import { RoutesPath } from './routes/Routes'
+import { AppRouter } from './router/AppRouter'
 
 // type 
 
@@ -12,7 +9,7 @@ function App() {
  
   return (
     <>
-    <RoutesPath />
+    <AppRouter />
     </>
   )
 }

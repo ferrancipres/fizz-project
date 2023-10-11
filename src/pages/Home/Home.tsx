@@ -24,18 +24,17 @@ export const Home = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const filter = searchParams.get('filter') ?? '';
 
-
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchParams({filter: e.target.value})
   }
 
   return (
       <>
+      <div className='flex justify-center items-center'>
+        <input className='text-white text-xl font-semibold' value={filter} onChange={handleFilter} type='search' placeholder='filter' />
+      </div>
         <Layout>
         <section className='py-16'>
-          <div className='flex justify-center items-center'>
-            <input className='text-white text-xl font-semibold' value={filter} onChange={handleFilter} type='search' placeholder='filter' />
-          </div>
           <Hero />
           <div className='container mx-auto'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0 '>

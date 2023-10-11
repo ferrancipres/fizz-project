@@ -13,13 +13,10 @@ import { LayoutDetails } from "..";
 // function
 export const ProductDetails = () => {
     const { title: productID } = useParams();
-    console.log(productID)
+
     const { products } = useContext(productContext) as ProductContextType
     const { addToCart } = useContext(CartContext) as CartItemType
 
-    //get the single product based on the id
-    // si consigo meter aquí title podré hacerlo 
-    console.log(products)
     const product = products
         ? products.find(({ title }) => title === productID)
         : null

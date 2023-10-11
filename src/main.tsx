@@ -5,6 +5,7 @@ import './index.css'
 import { ProductProvider } from './context/ProductContext.tsx'
 import { SidebarProvider } from './context/SidebarContext.tsx'
 import { CartProvider } from './context/CartContext.tsx'
+import { AuthProvider } from './auth/context/AuthProvider.tsx'
 
 // type
 
@@ -13,7 +14,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <SidebarProvider> 
         <CartProvider>
             <ProductProvider>
+                <AuthProvider>
                     <App />
+                </AuthProvider>
             </ProductProvider>
         </CartProvider>
     </SidebarProvider>
