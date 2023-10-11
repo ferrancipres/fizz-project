@@ -16,3 +16,6 @@ export const Checkout:FC = () => {
     // </>
   )
 }
+
+// crear componente CartItemCheckout...y pasarle todo igual menos los campos
+// que no me iteresan..despues del '.map'

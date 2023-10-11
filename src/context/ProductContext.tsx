@@ -11,13 +11,13 @@ export const ProductProvider: FC<ProductProviderProps> = ({children}) => {
   //products state
   const [products, setProducts] = useState([])
 
-  //fetch products 
-  const url = import.meta.env.VITE_API_BASE_URL;
+  // //fetch products 
+  // const url = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
     try {
       const fetchProducts = async () => {
-      const response = await fetch(url);
+        const response = await fetch('https://fakestoreapi.com/products')
       const data = await response.json();
       setProducts(data);
       }
@@ -26,6 +26,7 @@ export const ProductProvider: FC<ProductProviderProps> = ({children}) => {
       throw new Error ('There is an error')
     }
   },[])
+
 
   return (
     <productContext.Provider value={{products, setProducts}}>

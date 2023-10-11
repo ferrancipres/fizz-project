@@ -14,5 +14,5 @@ export type PrivateTypeProps = {
 export const PrivateRoute = ({children}:PrivateTypeProps) => {
     const {isLogged} = useContext<AuthContextType>(AuthContext)
   
-    return isLogged? children: <Navigate to='/login' />
+    return isLogged ? children: <Navigate to='/login' />
 }

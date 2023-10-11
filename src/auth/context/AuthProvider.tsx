@@ -4,9 +4,14 @@ import { authReducer } from "./authReducer";
 import { ReactNode } from "react";
 import { AuthContext } from "./authContext";
 
+export type userTypeLogged = {
+    user: string,
+    password: string
+}
+
 const init = () => {
     const userString = localStorage.getItem('user');
-    const user = userString ? JSON.parse(userString) : null;
+    const user:userTypeLogged = userString ? JSON.parse(userString) : null;
 
     return {
         isLogged: !!user,
@@ -21,14 +26,11 @@ type AuthProviderProps = {
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
     const [authState, dispatch] = useReducer(authReducer, {}, init)
-
-    const login = (name = '') => {
-        const user = {
-            id: 1,
-            name,
-        }
-        localStorage.setItem('user', JSON.stringify(user))
-        dispatch({ type: types.login, payload: user })
+    console.log('authprovider', authState)
+    const login = (newUser:userTypeLogged) => {
+        console.log('patata',newUser)
+        localStorage.setItem('user', JSON.stringify(newUser))
+        dispatch({ type: types.login, payload: newUser })
     }
 
     const logout = () => {

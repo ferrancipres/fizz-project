@@ -34,7 +34,7 @@ export const Sidebar = () => {
         </div>
         {/* // No funciona el overflow-yaitp */}
         <div className='flex flex-col gap-y-2 h-[350px] lg:h-[900px] overflow-y-auto overflow-x-hidden border-b'>
-        {cart.map((item: ProductTypeProps) => {
+        {cart&&cart.map((item: ProductTypeProps) => {
           return <CartItem item={item} key={item.id} />
           })}
         </div>

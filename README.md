@@ -1,3 +1,4 @@
+
 # To do EXTRA 
 - problema MODAL***
 - Pendiente REVISAR CSS + NAVEGACION WEB 
@@ -23,35 +24,34 @@
 - Iniciar sesion 
 - Checkout..page..+ Shipping Form + Select payment..+ Final page..to return HOME
 - Welcome back, username - Logout
+- "server": "json-server --watch ./src/Assets/db/simpleMOCK_DATA.json",
+- 
 
 
-export function App() {
-  const { register, handleSubmit } = useForm();
-  const [data, setData] = useState("");
 
-  return (
-    <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
-      <Header />
-      <input {...register("firstName")} placeholder="First name" />
-      <select {...register("category", { required: true })}>
-        <option value="">Select...</option>
-        <option value="A">Option A</option>
-        <option value="B">Option B</option>
-      </select>
-      <textarea {...register("aboutYou")} placeholder="About you" />
-      <p>{data}</p>
-      <input type="submit" />
-    </form>
-  );
+ #####
+
+import img_1 from '../Images/525-5253539_3d-number-1-png.png'
+
+{
+    "products": [
+        {
+            "title": "Mis cojones",
+            "id": 3224
+            "name": "sdfsdfsd"
+            "stock": 32343
+            "imagen": "https:ddddddd"
+            "imagen": img_1
+            
+        },
+        
+        {
+            "title": "Mis cojones",
+            "id": 3224
+            "name": "sdfsdfsd"
+            "stock": 32343
+        },
+
+    ]
+
 }
-
-::.....
-const {register, handleSubmit} = useForm();
-const [data, setData] = useState('');
-const onSubmit = {handleSubmit((data) => 
-setData (JSON.stringify(data)))}>
-
-<label>First Name:
-<input name='firstName' type='text' placeholder=''>
-</label>
-<input {...register('firstName')} placeholder='First name' />
