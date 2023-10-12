@@ -10,6 +10,7 @@ export type userTypeLogged = {
 }
 
 const init = () => {
+    // Comentar que sin ! ..se rompe todo
     const userString = localStorage.getItem('user');
     const user:userTypeLogged = userString ? JSON.parse(userString) : null;
 
@@ -26,9 +27,10 @@ type AuthProviderProps = {
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
     const [authState, dispatch] = useReducer(authReducer, {}, init)
-    console.log('authprovider', authState)
+    console.log(authState)
+    console.log(authReducer)
+    
     const login = (newUser:userTypeLogged) => {
-        console.log('patata',newUser)
         localStorage.setItem('user', JSON.stringify(newUser))
         dispatch({ type: types.login, payload: newUser })
     }

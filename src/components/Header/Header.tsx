@@ -11,19 +11,13 @@ import { SidebarContext, CartContext } from '../../context'
 import { CartItemType, SidebarContextType } from '../../types'
 import { AuthContext } from '../../auth/context/authContext'
 
-// export type AuthContextType = {
-//   isLogged: boolean;
-//   login: () => void
-//   logout: () => void
-// }
-
-
 // function
 export const Header: FC = () => {
   const [isActive, setIsActive] = useState(false)
   const {isOpen,setIsOpen} = useContext(SidebarContext) as SidebarContextType
   const {itemAmount} = useContext(CartContext) as CartItemType
-  const {isLogged, login, logout} = useContext(AuthContext)
+  const {isLogged, logout} = useContext(AuthContext)
+  const userWelcome = JSON.parse(localStorage.getItem('user') || '[]')
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -34,12 +28,24 @@ export const Header: FC = () => {
   return (
     <header className={`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all px-4`}>
       <div className='container mx-auto flex items-center justify-between h-full'>
-        {/* logo */}
-        <div className='mt-10'>
-          {isLogged ?
-            <button onClick={logout}>Logout</button> :
-            <button onClick={() =>login()}>Login</button>
-          }
+        {isLogged ? (
+          <div>
+            <p>{`Welcome ${userWelcome.user}`}</p> 
+            <button onClick={logout}>Logout</button>
+          </div>
+        )
+        :
+        (
+          <Link to={'/login'}>
+              <button>Login</button>
+          </Link>
+          
+        ) 
+          
+        }
+        
+        <div>
+          
         </div>
         <div>
           <Link to={'/'}>LOGO</Link>

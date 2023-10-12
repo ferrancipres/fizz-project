@@ -13,7 +13,6 @@ export const LoginPage = () => {
     const [password, setPassword] = useState<string>('')
 
     const navigate = useNavigate();
-
     const onLogin = (ev:React.FormEvent) => {
         
         ev.preventDefault();
@@ -21,8 +20,8 @@ export const LoginPage = () => {
             user: user, 
             password: password,
         }
-        console.log('loginpage', newUser)
         login(newUser)
+        console.log(newUser)
         // pensar en poner navegate -1
         navigate((-1), {
             replace: true

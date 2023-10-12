@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom'
 
 // import img
-import asdasd from '../../assets/img/asdasd.png'
+// import asdasd from '../../assets/img/asdasd.png'
 
 export const Hero = () => {
   return (
@@ -26,9 +26,9 @@ export const Hero = () => {
         </div>
 
         {/* image */}
-        <div className='hidden lg:block'>
+        {/* <div className='hidden lg:block'>
           <img className='w-24' src={asdasd} alt='' />
-        </div>
+        </div> */}
       </div>
     </section>
   )

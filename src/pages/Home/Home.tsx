@@ -17,7 +17,7 @@ export const Home = () => {
 
   const filteredProducts = products.filter((item:ProductTypeProps)  => {
     return (
-      item.category === "men's clothing" || item.category === "women's clothing"
+      item.category === "New Products" || item.category === "Halloween"
     );
   })
   

@@ -1,0 +1,202 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Cempasuchil",
+            "description": "Brillante y cítrica",
+            "price": 7.50,
+            "category": "Best Seller",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/cempasuchil_bath_bomb_2023_6acf7ae5_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/00808_3_9490822b_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/00808_2_94ed9c20_thumbnail_4096.jpg",
+            "stock": 100
+        },
+        {
+            "id": 2,
+            "title": "Glitter Bomb",
+            "description": "¡Un baño prefiesta!",
+            "price": 9.50,
+            "category": "New Products",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/glitter_bomb_bath_bomb_2023_ab1d1672_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/glitter_bomb_bath_bomb_2023_9x16_22c4ff48_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/glitterbox_hero_16x9_0c0be1b1_thumbnail_4096.jpg",
+            "stock": 150
+        },
+        {
+            "id": 3,
+            "title": "Barbie Bath",
+            "description": "El baño de tus sueños",
+            "price": 7.50,
+            "category": "New Products",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/barbie_bath_bomb_2023_a1b04302_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/Barbie_x_lush_barbie_bath_bomb_heros_2023-25_5bd6d196_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/Barbie_x_lush_barbie_bath_bomb_heros_2023-24_f42492ed_thumbnail_4096.jpg",
+            "stock": 30
+        },
+        {
+            "id": 4,
+            "title": "Lord of Misrule",
+            "description": "Para quienes aman la parranda",
+            "price": 7.50,
+            "category": "Best Seller",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/lord_of_misrule_bath_bomb_ecom_2023_3accf742_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/lord_of_misrule_bath_bomb_hero_2023-4_e54e4a8b_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/lord_of_misrule_bath_bomb_hero_2023-1_e0f49bfb_thumbnail_4096.jpg",
+            "stock": 323
+        },
+        {
+            "id": 5,
+            "title": "Punkin Pumpkin",
+            "description": "Vibrante y revitalizante",
+            "price": 7.50,
+            "category": "Halloween",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/punkin_pumpkin_bath_bomb_2023_724062ec_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/punkin_pumpkin_bath_bomb_halloween_hero_image_2020-2_a51d79c0_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/punkin_pumpkin_bath_bomb_halloween_hero_image_2020_93d17210_thumbnail_4096.jpg",
+            "stock": 100
+        },
+        {
+            "id": 6,
+            "title": "Bat Art",
+            "description": "Limpia cualquier aura",
+            "price": 7.60,
+            "category": "Halloween",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bat_art_bath_bomb_2023_1_a85b5216_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bat_art_bath_bomb_2000x1364_2022-3_029aa68d_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bat_art_bath_bomb_2000x1364_2022-2_91b1a24d_thumbnail_4096.jpg",
+            "stock": 30
+        },
+        {
+            "id": 7,
+            "title": "Sweet Pudding",
+            "description": "¡Dulce y reconfortante!",
+            "price": 5.95,
+            "category": "Best Seller",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/sweet_pudding_bath_bomb_2023_fc0cd8f3_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/sweet_pudding_bath_bomb_hero_2022__3_75ac6da6_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/sweet_pudding_bath_bomb_hero_2022__9_45c5e81f_thumbnail_4096.jpg",
+            "stock": 300
+        },
+        {
+            "id": 8,
+            "title": "Shoot for the Stars",
+            "description": "Un superventas dulce y estelar",
+            "price": 7.50,
+            "category": "Best Seller",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/shoot_for_the_stars_bath_bomb_2023_8563c294_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/shoot_for_the_stars_bath_bomb_hero_image_newsite_2021-1_1c1ab617_thumbnail_4.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/shoot_for_the_stars_bath_bomb_hero_image_newsite_2021-3_5959bde8_thumbnail_4.jpg",
+            "stock": 353
+        },
+        {
+            "id": 9,
+            "title": "Lakes",
+            "description": "Paisajes frescos y herbales",
+            "price": 8.50,
+            "category": "Best Seller",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/lakes_bath_bomb_kitchen_2021_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/the_lakes_bath_bomb_hero_image_newsite_2021-5_25e85732_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/The_Lakes_Island_Hero_87d5d3d8_thumbnail_4096.jpg",
+            "stock": 100
+        },
+        {
+            "id": 10,
+            "title": "Peachy",
+            "description": "Dulce, descarado y afrutado",
+            "price": 7.50,
+            "category": "New Products",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/peachy_bath_bomb_2021_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/peachy_bath_bomb_hero_image_newsite_2021-1080x1920_1380a8be_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/peachy_bath_bomb_hero_image_2021-1_3de13576_thumbnail_4096.jpg",
+            "stock": 343
+        },
+        {
+            "id": 11,
+            "title": "Sex Bomb",
+            "description": "Un sensual best seller de jazmín",
+            "price": 6.50,
+            "category": "Best Seller",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/sex_bomb_bath_bomb_2021_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/sex_bomb_bath_bomb_ayr_pic_2019_2_35a3acd9_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/peachy_bath_bomb_hero_image_2021-1_3de13576_thumbnail_4096.jpg",
+            "stock": 343
+        },
+        {
+            "id": 12,
+            "title": "Avobath",
+            "description": "Un subidón de hierba limón",
+            "price": 5.95,
+            "category": "New Products",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/avobath_bath_bomb_2021_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/avo_bath_bath_bomb_hero_image_2021-3_a9b33622_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/avo_bath_bath_bomb_hero_image_2021-3_a9b33622_thumbnail_4096.jpg",
+            "stock": 343
+        },
+        {
+            "id": 13,
+            "title": "Intergalactic",
+            "description": "Un superventas de otro mundo",
+            "price": 7.95,
+            "category": "Best Seller",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/intergalactic_bath_bomb_2021_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/intergalactic_bath_bomb_hero_image_2021-4_e5e6a243_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/intergalactic_bath_bomb_hero_image_2021-2_e39e7baa_thumbnail_4096.jpg",
+            "stock": 343
+        },
+        {
+            "id": 14,
+            "title": "Monster Optopus",
+            "description": "Wobbly passion fruit tentacles",
+            "price": 12.95,
+            "category": "Halloween",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/monster_octopus_shower_jelly_2023_06c3798e_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/monster_octopus_shower_jelly_hero_2023_1_5804761e_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/monster_octopus_shower_jelly_hero_2023_5_1d79d354_thumbnail_4096.jpg",
+            "stock": 34
+        },
+        {
+            "id": 15,
+            "title": "Bubble Lugosi",
+            "description": "Afrutada y luminosa",
+            "price": 9.95,
+            "category": "Halloween",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bubble_lugosi_bubble_bar_2023_1_3668a61d_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bubble_lugosi_bubble_bar_hero_2022__6_d479d40f_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bubble_lugosi_bubble_bar_hero_2022__12_b6aac16b_thumbnail_4096.jpg",
+            "stock": 33
+        },
+        {
+            "id": 16,
+            "title": "Ghostie",
+            "description": "Un baño de miedo (¡y cítrico!)",
+            "price": 6.95,
+            "category": "Halloween",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/ghostie_bath_bomb_2023_1f6b3585_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/ghostie_bath_bomb_hero_2022_1_03cc86f1_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/ghostie_bath_bomb_hero_2022_4_18ebfeec_thumbnail_4096.jpg",
+            "stock": 45
+        },
+        {
+            "id": 17,
+            "title": "Pumpkin Crumble",
+            "description": "No te darán calabazas",
+            "price": 9.95,
+            "category": "Halloween",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/pumpkin_crumble_bubble_bar_2023_e75e4795_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/pumpkin_crumble_bubble_bar_hero_2023_2_cfabd78e_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/pumpkin_crumble_bubble_bar_hero_2023_4_2c51458d_thumbnail_4096.jpg",
+            "stock": 45
+        },
+        {
+            "id": 18,
+            "title": "Bonehead",
+            "description": "A descansar el esqueleto",
+            "price": 8.95,
+            "category": "Halloween",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bonehead_bubble_bar_ecom_2023_e0a17965_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bonehead_bubble_bar_hero_2023-2_5b9c076c_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bonehead_bubble_bar_hero_2023-3_628e36b7_thumbnail_4096.jpg",
+            "stock": 11
+        }              
+    ]
+}
