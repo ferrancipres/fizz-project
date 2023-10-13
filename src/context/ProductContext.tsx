@@ -17,13 +17,13 @@ export const ProductProvider: FC<ProductProviderProps> = ({children}) => {
   useEffect(() => {
     try {
       const fetchProducts = async () => {
-        const response = await fetch(url)
+      const response = await fetch(url)
       const data = await response.json();
       setProducts(data);
       }
       fetchProducts();
-    } catch {
-      throw new Error ('There is an error')
+    } catch (error) {
+        console.log("Error fetching data", error);
     }
   },[])
 
