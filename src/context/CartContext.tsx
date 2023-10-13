@@ -26,7 +26,7 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
       return accumulator + currentItem.price * currentItem.amount
     }, 0);
     setTotal(total)
-  });
+  },[]);
 
   //update itemAmount
   useEffect(() => {
@@ -36,8 +36,7 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
       }, 0)
       setItemAmount(amount)
     }
-  },[cart]
-  )
+  },[cart]);
 
   //function addToCart
   const addToCart = (product:ProductTypeProps) => {

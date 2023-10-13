@@ -12,12 +12,12 @@ export const ProductProvider: FC<ProductProviderProps> = ({children}) => {
   const [products, setProducts] = useState([])
 
   // //fetch products 
-  // const url = import.meta.env.VITE_API_BASE_URL;
+  const url = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
     try {
       const fetchProducts = async () => {
-      const response = await fetch('http://localhost:3000/products')
+        const response = await fetch(url)
       const data = await response.json();
       setProducts(data);
       }

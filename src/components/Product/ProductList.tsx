@@ -10,6 +10,15 @@ import { CartContext } from '../../context'
 // import type
 import { CartItemType, ProductTypeProps } from '../../types'
 
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Pagination, Autoplay } from 'swiper/modules';
+// import 'swiper/swiper-bundle.css'
+
+// import 'swiper/css';
+// import 'swiper/css/free-mode'
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+
 // function
 export const ProductList = ({product}: {product: ProductTypeProps}) => {
   const {image, category, title, price} = product

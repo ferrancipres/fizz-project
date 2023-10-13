@@ -27,8 +27,6 @@ type AuthProviderProps = {
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
     const [authState, dispatch] = useReducer(authReducer, {}, init)
-    console.log(authState)
-    console.log(authReducer)
     
     const login = (newUser:userTypeLogged) => {
         localStorage.setItem('user', JSON.stringify(newUser))

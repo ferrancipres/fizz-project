@@ -16,7 +16,7 @@
             "title": "Glitter Bomb",
             "description": "¡Un baño prefiesta!",
             "price": 9.50,
-            "category": "New Products",
+            "category": "New",
             "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/glitter_bomb_bath_bomb_2023_ab1d1672_thumbnail_256.png",
             "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/glitter_bomb_bath_bomb_2023_9x16_22c4ff48_thumbnail_4096.jpg",
             "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/glitterbox_hero_16x9_0c0be1b1_thumbnail_4096.jpg",
@@ -27,7 +27,7 @@
             "title": "Barbie Bath",
             "description": "El baño de tus sueños",
             "price": 7.50,
-            "category": "New Products",
+            "category": "New",
             "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/barbie_bath_bomb_2023_a1b04302_thumbnail_256.png",
             "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/Barbie_x_lush_barbie_bath_bomb_heros_2023-25_5bd6d196_thumbnail_4096.jpg",
             "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/Barbie_x_lush_barbie_bath_bomb_heros_2023-24_f42492ed_thumbnail_4096.jpg",
@@ -104,7 +104,7 @@
             "title": "Peachy",
             "description": "Dulce, descarado y afrutado",
             "price": 7.50,
-            "category": "New Products",
+            "category": "New",
             "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/peachy_bath_bomb_2021_thumbnail_256.png",
             "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/peachy_bath_bomb_hero_image_newsite_2021-1080x1920_1380a8be_thumbnail_4096.jpg",
             "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/peachy_bath_bomb_hero_image_2021-1_3de13576_thumbnail_4096.jpg",
@@ -126,7 +126,7 @@
             "title": "Avobath",
             "description": "Un subidón de hierba limón",
             "price": 5.95,
-            "category": "New Products",
+            "category": "New",
             "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/avobath_bath_bomb_2021_thumbnail_256.png",
             "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/avo_bath_bath_bomb_hero_image_2021-3_a9b33622_thumbnail_4096.jpg",
             "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/avo_bath_bath_bomb_hero_image_2021-3_a9b33622_thumbnail_4096.jpg",
@@ -177,17 +177,6 @@
             "stock": 45
         },
         {
-            "id": 17,
-            "title": "Pumpkin Crumble",
-            "description": "No te darán calabazas",
-            "price": 9.95,
-            "category": "Halloween",
-            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/pumpkin_crumble_bubble_bar_2023_e75e4795_thumbnail_256.png",
-            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/pumpkin_crumble_bubble_bar_hero_2023_2_cfabd78e_thumbnail_4096.jpg",
-            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/pumpkin_crumble_bubble_bar_hero_2023_4_2c51458d_thumbnail_4096.jpg",
-            "stock": 45
-        },
-        {
             "id": 18,
             "title": "Bonehead",
             "description": "A descansar el esqueleto",
@@ -197,6 +186,39 @@
             "imagenback1": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bonehead_bubble_bar_hero_2023-2_5b9c076c_thumbnail_4096.jpg",
             "imagenback2": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/bonehead_bubble_bar_hero_2023-3_628e36b7_thumbnail_4096.jpg",
             "stock": 11
-        }              
+        },
+        {
+            "id": 19,
+            "title": "Demon in the Dark",
+            "description": "Terror afrutado",
+            "price": 7.95,
+            "category": "Halloween",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/demon_in_the_dark_soap_2023_b2f1729f_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=3840,f=auto/https://unicorn.lush.com/media/thumbnails/products/demon_in_the_dark_soap_hero_2023_8_8018d809_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=3840,f=auto/https://unicorn.lush.com/media/thumbnails/products/demon_in_the_dark_soap_hero_2023_3_75435ca7_thumbnail_4096.jpg",
+            "stock": 11
+        },
+        {
+            "id": 20,
+            "title": "Baked Alaska",
+            "description": "Cítrico y refrescante",
+            "price": 8.95,
+            "category": "New",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/baked_alaska_soap_2023_ceac53cd_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=3840,f=auto/https://unicorn.lush.com/media/thumbnails/products/baked_alaska_soap_hero_2023__2_4a4c0f6d_thumbnail_4096.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=3840,f=auto/https://unicorn.lush.com/media/thumbnails/products/baked_alaska_soap_hero_2023__9_2bb1f853_thumbnail_4096.jpg",
+            "stock": 91
+        },
+        {
+            "id": 21,
+            "title": "Barbie Box",
+            "description": "¿Dulce y suave? ¡Suena bien!",
+            "price": 11.95,
+            "category": "New",
+            "image": "https://www.lush.com/cdn-cgi/image/width=1920,f=auto/https://unicorn.lush.com/media/thumbnails/products/barbie_boombox_soap_2023_07f3660e_thumbnail_256.png",
+            "imagenback1": "https://www.lush.com/cdn-cgi/image/width=3840,f=auto/https://unicorn.lush.com/media/file_upload/Boombox-Soap-Cover-Image_6027fc2d.jpg",
+            "imagenback2": "https://www.lush.com/cdn-cgi/image/width=3840,f=auto/https://unicorn.lush.com/media/thumbnails/products/Barbie_x_lush_boombox_soap_heros_2023-53_b1886fc1_thumbnail_4096.jpg",
+            "stock": 110
+        }
     ]
 }
