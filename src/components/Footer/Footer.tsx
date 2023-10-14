@@ -6,7 +6,7 @@ import { FC } from "react"
 export const Footer: FC = () => {
   return (
     <footer>
-      <section className='bg-black max-h-fit p-10 grid lg:grid-cols-3 gap-2 text-gray-300'>
+      <section className='bg-black mb-auto p-10 grid lg:grid-cols-3 gap-2 text-gray-300'>
         <div>
           <h1 className="text-3xl font-bold text-white-400">fizz</h1>
           <p className="py-4">Fizz was founded in 1995 by six co-founders; Mo Constantine, Mark Constantine, Rowena Bird, Helen Ambrosen, Liz Bennett and Paul Greeves.</p>

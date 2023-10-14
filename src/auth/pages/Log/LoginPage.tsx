@@ -20,7 +20,7 @@ export const LoginPage = () => {
             user: user, 
             password: password,
         }
-        login(newUser)
+         login(newUser)
         console.log(newUser)
         // pensar en poner navegate -1
         navigate((-1), {

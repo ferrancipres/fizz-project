@@ -45,7 +45,7 @@ export const ProductList = ({product}: {product: ProductTypeProps}) => {
         <Link to={`/product/${title}`}>
           <h3 className='font-medium mb-1'>{title}</h3>
         </Link>
-        <div className='font-semibold'>{price}€</div>
+        <div className='font-semibold'>{parseFloat((price).toString()).toFixed(2)}€</div>
       </div>
     </div>
   )

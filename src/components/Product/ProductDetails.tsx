@@ -1,14 +1,19 @@
 
 // import react
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useParams } from "react-router-dom"
 
 // import context
 import { productContext, CartContext } from '../../context';
 
+// import icon
+import { IoMdArrowForward } from 'react-icons/io'
+import { Link } from "react-router-dom";
+
 // import type
 import { CartItemType, ProductContextType } from '../../types';
 import { LayoutDetails } from "..";
+import { Accordion } from "../Accordion/Accordion";
 
 // function
 export const ProductDetails = () => {
@@ -29,32 +34,47 @@ export const ProductDetails = () => {
     }
 
     // desctructure product
-    const { title, price, description, image } = product
+    const { title, price, description, image, imagenback1, imagenback2, category } = product;
+
+    const [images, setImages] = useState({
+        image,
+        imagenback1,
+        imagenback2
+    });
+
+    const [activeImg, setActiveImg] = useState(images.image);
 
     return (
         <LayoutDetails>
-            <section className=' px-5 pt-32 pb-12 lg:py-32 h-screen flex items-center'>
-                <div className='container mx-auto'>
-                {/* image & text wrapper */}
-                    <div className='flex flex-col lg:flex-row items-center'>
-                    {/* image */}
-                        <div className='flex flex-1 justify-center items-center mb-8 lg:mb-0'>
-                            <img className='max-w-[200px] lg:max-w-sm' src={image} alt='' />
+            <div>
+                <div className='mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center items-center p-5'>
+                    <div className=' grid grid-cols-2'>
+                        <div className='mt-20 2xl:mx-[450px] w-20 h-20'>
+                            <img src={imagenback1} alt='' className='w-20 h-20 mb-1 rounded-md cursor-pointer' onClick={() => setActiveImg(imagenback1)} />
+                            < img src={imagenback2} alt='' className='w-20 h-20 mb-1 rounded-md cursor-pointer' onClick={() => setActiveImg(imagenback2)} />
+                            <img src={image} alt='' className=' w-20 h-20 rounded-md cursor-pointer' onClick={() => setActiveImg(image)} />
                         </div>
-                        {/* text */}
-                        <div className='flex-1 text-center lg:text-left'>
-                            <h1 className='text-[26px] font-medium mb-2 max-w-[450px] mx-auto lg:mx-0 '>
-                            {title}
-                            </h1>
-                            <div className='text-xl text-red-500 font-medium mb-6'>
-                                $ {price}
-                            </div>
-                            <p className='mb-4'>{description}</p>
-                            <button onClick={() => addToCart(product)} className='bg-black py-4 px-8 text-white mb-6'>Add to cart</button>
+                        <div>
+                            <img src={activeImg} alt='' className='mt-14 mb-5 w-80 h-50 -mx-16 ' />
+                        </div>
+                    </div>
+                    <div className='mt-32'>
+                        <span className='bg-black text-white rounded px-12 font-semibold'>{category}</span>
+                        <h2 className='text-3xl font-bold'>{title}</h2>
+                        <p className='text-gray-600 '>{description}</p>
+                        <h6 className='mt-5 text-xl font-semibold'>$ {parseFloat(price).toFixed(2)}</h6> 
+                        <div className="flex items-center">
+                            <button onClick={() => addToCart(product)} className='mt-5 bg-black py-4 px-8 text-white mb-6'>Add to cart</button>
+                            <Link to='/'>
+                                <button className='mx-2 bg-white py-6 px-8 text-black mb-6 mt-4'><IoMdArrowForward className='text-2xl rotate-180' />Back</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div>
+                    <Accordion />
+                </div>
+            </div>
         </LayoutDetails>
     )
 }

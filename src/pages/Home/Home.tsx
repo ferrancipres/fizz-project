@@ -62,10 +62,6 @@ export const Home = () => {
             delay: 10000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
-          freeMode={true}
           grabCursor={true}
           breakpoints={{
             0: {
@@ -119,10 +115,6 @@ export const Home = () => {
             delay: 10000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
-          freeMode={true}
           grabCursor={true}
           breakpoints={{
             0: {
@@ -176,10 +168,6 @@ export const Home = () => {
             delay: 10000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
-          freeMode={true}
           grabCursor={true}
           breakpoints={{
             0: {

@@ -1,21 +1,28 @@
 
-# To do EXTRA 
-- Video (CAM) / Modificar HOME ***
-- Css & Tailwind - Components (Empezando Checkout) + Navegación para atras CUIDADO!
-- 
-- Dropdown para el boton user (React & Tailwind) + Wish Cart + 
-- Quizás intentaría que el html fuese más semántico en algunas partes porque google lo penaliza mucho 
-- He visto algún que otro useEffect con su array de dependencias vacío, Siempre rellenarlo con algún estado
-- Checkout ( No sé como desactivar el botón)
-- problema MODAL***
+## Domingo ##
+- Html fuese más semántico 
+- useEffect con su array de dependencias vacío
+- Clean code
+- Comillas dobles
+- Organización de archivos
+- README 
+- Click up 
+- Figma
 
-# To do EXTRA - VALENZUELA (tutoria)
-- Tengo 2 errores en el header (login, logout)
+
+
 
 ## To DO
-- Checkout..page..+ Shipping Form + Select payment..+ Final page..to return HOME
-- Create account
-- Filter: 
-New Products
-Best Seller
-Halloween
+- Log In - react use hook form...
+- TARDE/////
+- Checkout page (- Shipping Form + Select payment..+ Final page..to return HOME) + boton useref ??? 
+- Thank you page  (ES MEJOR UN MODAL..que DESAPAREZCA al cabo de x segundos..o con boton para la HOME) + borrar información del carrito del local
+
+## Extra  
+- Product Details (Añadir description .json  + mirar @media..de los elementos NO ME GUSTA NADA)
+- Limpiar el código.(quitar comentario..comillas..html semantico)
+- & Create account (PENDIENTE MICHELE...con lógica)
+- whislist
+- useref?? 
+- react-hot-toast?  && react-tostify?? && toast? 
+- menu desplegable boton inicio
