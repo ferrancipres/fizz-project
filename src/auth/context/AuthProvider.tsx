@@ -38,6 +38,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         dispatch({ type: types.logout })
 
     }
-    return <AuthContext.Provider value={{ ...authState, login: login, logout: logout }}> {children} </AuthContext.Provider>
+    return <AuthContext.Provider value={{ ...authState, login, logout }}>
+        {children} 
+        </AuthContext.Provider>
 
 }

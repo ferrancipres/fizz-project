@@ -12,7 +12,6 @@ import { CartItemType, ProductTypeProps } from '../../types'
 
 // function
 export const ProductList = ({product}: {product: ProductTypeProps}) => {
-  console.log({product})
   const {image, category, title, price} = product
   const {addToCart} = useContext(CartContext) as CartItemType
 

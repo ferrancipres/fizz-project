@@ -24,7 +24,6 @@ import { useSearchParams } from 'react-router-dom'
 // function
 export const Home = () => {
   const { products} = useContext(productContext) as ProductContextType
-  console.log(products)
 
   const filteredProductsHalloween = products.filter((item:ProductTypeProps)  => {
     return (

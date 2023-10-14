@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom"
 import { AuthContext } from "../../context/authContext";
 import { userTypeLogged } from "../../context/AuthProvider";
 
-
 export const LoginPage = () => {
     const { login } = useContext(AuthContext)
+    // console.log(login)
 
 
     const [user, setUser] = useState<string>('')
@@ -21,7 +21,7 @@ export const LoginPage = () => {
             password: password,
         }
          login(newUser)
-        console.log(newUser)
+
         // pensar en poner navegate -1
         navigate((-1), {
             replace: true
@@ -42,8 +42,7 @@ export const LoginPage = () => {
                 <div className='flex justify-start items-center ml-5 text-2xl cursor-pointer'>
                     <button className= 'text-black' type='submit'>Login</button>
                 </div>
-            </form>
-            
+            </form>           
         </>
 
     )

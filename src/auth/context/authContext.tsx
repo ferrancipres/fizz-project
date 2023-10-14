@@ -6,4 +6,8 @@ export type AuthContextType = {
     logout: () => void
 }
 
-export const AuthContext = createContext<AuthContextType>({ isLogged: false, login:()=>{}, logout:()=>{}});
+export const AuthContext = createContext<AuthContextType>({ 
+    isLogged: false,
+    login:()=>{},
+    logout:()=>{}
+});
