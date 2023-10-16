@@ -1,17 +1,12 @@
 
-// import context, useEffect, useState
 import { FC, createContext, useEffect, useState} from 'react'
 
-// import type
 import { ProductProviderProps } from '../types';
 
-// function
 export const productContext = createContext({});
 export const ProductProvider: FC<ProductProviderProps> = ({children}) => {
-  //products state
-  const [products, setProducts] = useState([])
 
-  // //fetch products 
+  const [products, setProducts] = useState([])
   const url = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {

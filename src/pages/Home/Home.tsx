@@ -1,7 +1,6 @@
-// import react
 import {useContext} from 'react'
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import {Autoplay} from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
@@ -11,17 +10,14 @@ import 'swiper/css/free-mode'
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// import product context
+
 import { productContext } from '../../context'
 
-// import components
 import { ProductList, Layout, Hero } from '../../components'
 
-// import type
 import { ProductTypeProps, ProductContextType } from '../../types'
 import { useSearchParams } from 'react-router-dom'
 
-// function
 export const Home = () => {
   const { products} = useContext(productContext) as ProductContextType
 

@@ -1,17 +1,22 @@
-// import react
-import { FC } from "react"
-import { Link } from "react-router-dom"
+import { useContext, FC } from "react";
+import { MdDoneOutline } from 'react-icons/md'
 
-// import type
-import { ModalTypeProps } from '../../types'
+import { CartContext } from "../../context";
 
-// function 
-export const Modal: FC<ModalTypeProps> = ({isVisible, onClose}) => {
-    if(!isVisible) return null
+import { CartItemType, ModalTypeProps } from "../../types";
+
+export const Modal: FC<ModalTypeProps> = ({ isVisible }) => {
+    const { clearCart } = useContext(CartContext) as CartItemType;
+
+    const handleBuy = () => {
+        clearCart();
+        window.location.href = "/";
+    }
+
+    if (!isVisible) return null;
     
     return (
         <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-
             <div className="fixed inset-0 bg-gray-500 backdrop-blur flex justify-center items-center bg-opacity-75 transition-opacity"></div>
 
             <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
@@ -25,19 +30,22 @@ export const Modal: FC<ModalTypeProps> = ({isVisible, onClose}) => {
                                     </svg>
                                 </div>
                                 <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                                    <h3 className="text-base font-semibold leading-6 text-gray-900" id="modal-title">Si lees esto eres TONTO</h3>
+                                    <MdDoneOutline className='absolute right-20' />
+                                    <h3 className="text-base font-semibold leading-6 text-gray-900" id="modal-title">Purchase completed</h3>
                                     <div className="mt-2">
-                                        <p className="text-sm text-gray-500">Please, to continue with your purchase you need to be registered. 
-                                        Login to synchronize your shopping cart.</p>
+                                         <p className="text-sm text-gray-500">Your purchase has been successfully completed. You will receive more information by email when your order has been processed.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                         <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                            <Link to={'/login'} type="button" className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm 
-                            hover:bg-red-500 sm:ml-3 sm:w-auto">Contine</Link>
-                            <button onClick={() => onClose()} type="button" className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold
-                             text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
+                            <button 
+                            onClick={handleBuy} 
+                            type="button" 
+                            className="mt-3 inline-flex w-full justify-center rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset sm:w-auto">
+                                Continue
+                            </button>
                         </div>
                     </div>
                 </div>

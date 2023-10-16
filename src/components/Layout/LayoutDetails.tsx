@@ -7,7 +7,7 @@ export const LayoutDetails: FC<PropsWithChildren> = ({ children }) => {
         <>
             <Navbar />
             <Sidebar />
-            {children}
+                {children}
             <Footer />
         </>
     )

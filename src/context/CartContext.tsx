@@ -1,26 +1,20 @@
-// import 
-// import React from 'react'
+
 import { FC, useEffect, createContext, useState } from 'react'
 
-// import type
 import { CartProviderProps, ProductTypeProps } from '../types'
 
-// upload information from LocalStorage
 const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]' )
 
-// function
 export const CartContext = createContext({})
 export const CartProvider:FC<CartProviderProps> = ({children}) => {
   const [cart, setCart] = useState<ProductTypeProps[]>(cartFromLocalStorage)
   const [itemAmount, setItemAmount] = useState(0)
   const [total, setTotal] = useState(0)
 
-  // function to save information to LocalStorage
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart))
   },[cart])
 
- // function to calculate total
   useEffect(() => {
     const total = cart.reduce((accumulator, currentItem) => {
       return accumulator + currentItem.price * currentItem.amount
@@ -28,7 +22,6 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
     setTotal(total)
   },);
 
-  //update itemAmount
   useEffect(() => {
     if(cart) {
       const amount = cart.reduce ((accumulator, currentItem) => {
@@ -38,12 +31,9 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
     }
   },[cart]);
 
-  //function addToCart
   const addToCart = (product:ProductTypeProps) => {
 
     const newItem: ProductTypeProps = {... product, amount: 1 }
-
-    // check if the item alredy in the cart
     const cartItem = cart.find((item:ProductTypeProps) => {
       return item.id === product.id;
     })
@@ -63,7 +53,6 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
     }
   }
 
-  // function removeFromCart
   const removeFromCart = (id:number) => {
     const newCart = cart.filter((item) => {
       return item.id !== id
@@ -71,12 +60,10 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
     setCart(newCart)
   }
 
-  // clear cart 
   const clearCart = () => {
     setCart([])
   }
 
-  //increase amount 
   const increaseAmount = (id:number) => {
     const item = cart.find ((item) => item.id === id)
     if(item) {
@@ -84,7 +71,6 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
     }
   }
 
-  //descrease amount
   const decreaseAmount = (id:number) => {
     const cartItem = cart.find((item) => {
       return item.id === id;

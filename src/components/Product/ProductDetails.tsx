@@ -1,21 +1,16 @@
 
-// import react
 import { useContext, useState } from "react";
 import { useParams } from "react-router-dom"
 
-// import context
 import { productContext, CartContext } from '../../context';
 
-// import icon
 import { IoMdArrowForward } from 'react-icons/io'
 import { Link } from "react-router-dom";
 
-// import type
 import { CartItemType, ProductContextType } from '../../types';
 import { LayoutDetails } from "..";
 import { Accordion } from "../Accordion/Accordion";
 
-// function
 export const ProductDetails = () => {
     const { title: productID } = useParams();
 
@@ -26,17 +21,15 @@ export const ProductDetails = () => {
         ? products.find(({ title }) => title === productID)
         : null
 
-    //if product is not found
     if (!product) {
         return (
             <section className='h-screen flex justify-center items-center'>Loading...</section>
         )
     }
-
-    // desctructure product
+    
     const { title, price, description, image, imagenback1, imagenback2, category } = product;
 
-    const [images, setImages] = useState({
+    const [images] = useState({
         image,
         imagenback1,
         imagenback2
@@ -58,7 +51,7 @@ export const ProductDetails = () => {
                             <img src={activeImg} alt='' className='mt-14 mb-5 w-80 h-50 -mx-16 ' />
                         </div>
                     </div>
-                    <div className='mt-32'>
+                    <div className='mt-36'>
                         <span className='bg-black text-white rounded px-12 font-semibold'>{category}</span>
                         <h2 className='text-3xl font-bold'>{title}</h2>
                         <p className='text-gray-600 '>{description}</p>
