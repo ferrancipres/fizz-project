@@ -27,7 +27,7 @@ export const Sidebar = () => {
           </div>
         </div>
         
-      <div className='flex flex-col gap-y-2 h-[800px] overflow-x-hidden border-b md:h-[800px] lg:h-[800px]'>
+      <div className='flex flex-col gap-y-2 h-[400px] overflow-x-hidden border-b md:h-[800px] lg:h-[800px]'>
         {cart&&cart.map((item: ProductTypeProps) => {
           console.log(item)
           return <CartItem item={item} key={item.id} />
