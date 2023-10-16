@@ -1,11 +1,11 @@
-import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 
 import { IoMdClose, IoMdRemove, IoMdAdd } from 'react-icons/io'
 
-import { CartContext } from '../../context';
+import { CartContext } from '../../context'
 
-import { CartItemProps, CartItemType } from '../../types';
+import { CartItemProps, CartItemType } from '../../types'
 
 
 export const CheckoutItem = ({ item }: { item: CartItemProps }) => {
@@ -54,5 +54,5 @@ export const CheckoutItem = ({ item }: { item: CartItemProps }) => {
                 </div>
             </div>
         </div>
-    );
+    )
 }

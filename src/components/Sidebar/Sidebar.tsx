@@ -1,11 +1,11 @@
 
 import { SidebarContext, CartContext } from '../../context'
 
-import { SidebarContextType, ProductTypeProps, CartItemType } from "../../types";
+import { SidebarContextType, ProductTypeProps, CartItemType } from '../../types'
 import { GoAlert } from 'react-icons/go'
 
-import { useContext} from "react"
-import { Link } from "react-router-dom";
+import { useContext} from 'react'
+import { Link } from 'react-router-dom'
 
 import {IoMdArrowForward} from 'react-icons/io'
 import {FiTrash2} from 'react-icons/fi'

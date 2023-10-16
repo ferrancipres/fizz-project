@@ -1,5 +1,5 @@
 
-import { FC } from "react"
+import { FC } from 'react'
 import { BsInstagram, BsLinkedin, BsFacebook, BsTwitter } from 'react-icons/bs'
 
 export const Footer: FC = () => {
@@ -7,8 +7,8 @@ export const Footer: FC = () => {
     <footer>
       <section className='bg-black mb-auto p-10 grid lg:grid-cols-3 gap-2 text-gray-300'>
         <div>
-          <h1 className="text-3xl font-bold text-white-400">fizz</h1>
-          <p className="py-4">Fizz was founded in 1995 by six co-founders; Mo Constantine, Mark Constantine, Rowena Bird, Helen Ambrosen, Liz Bennett and Paul Greeves.</p>
+          <h1 className='text-3xl font-bold text-white-400'>fizz</h1>
+          <p className='py-4'>Fizz was founded in 1995 by six co-founders, Mo Constantine, Mark Constantine, Rowena Bird, Helen Ambrosen, Liz Bennett and Paul Greeves.</p>
           <div className='flex md:w-[75%] my-5 justify-around'>
             <BsFacebook size={30} />
             <BsInstagram size={30} />

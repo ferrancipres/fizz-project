@@ -1,5 +1,5 @@
-import { createContext } from "react";
-import { userTypeLogged } from "./types/userTypeLogged";
+import { createContext } from 'react'
+import { userTypeLogged } from './types/userTypeLogged'
 
 export type AuthContextType = {
     isLogged: boolean,
@@ -13,4 +13,4 @@ export const AuthContext = createContext<AuthContextType>({
     user: null,
     login: () => {},
     logout: () => {} 
-});
+})

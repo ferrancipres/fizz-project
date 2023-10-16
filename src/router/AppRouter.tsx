@@ -1,9 +1,9 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { LoginPage } from "../auth/pages/Log/LoginPage"
-import { Home } from "../pages"
-import { Checkout} from "../pages"
-import { ProductDetails } from "../components"
-import { PrivateRoute } from "./PrivateRoute"
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { LoginPage } from '../auth/pages/Log/LoginPage'
+import { Home } from '../pages'
+import { Checkout} from '../pages'
+import { ProductDetails } from '../components'
+import { PrivateRoute } from './PrivateRoute'
 
 export const AppRouter = () => {
     return (

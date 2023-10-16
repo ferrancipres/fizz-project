@@ -1,14 +1,14 @@
 import {useContext} from 'react'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Navigation } from 'swiper/modules'
 import {Autoplay} from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
 
-import 'swiper/css';
+import 'swiper/css'
 import 'swiper/css/free-mode'
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
 
 import { productContext } from '../../context'
@@ -23,22 +23,22 @@ export const Home = () => {
 
   const filteredProductsHalloween = products.filter((item:ProductTypeProps)  => {
     return (
-      item.category === "Halloween"
-    );
+      item.category === 'Halloween'
+    )
   })
   const filteredProductsBestSeller = products.filter((item: ProductTypeProps) => {
     return (
-      item.category === "Best Seller"
-    );
+      item.category === 'Best Seller'
+    )
   })
   const filteredProductsNewProducts = products.filter((item: ProductTypeProps) => {
     return (
-      item.category === "New" 
-    );
+      item.category === 'New' 
+    )
   })
   
-  const [searchParams, setSearchParams] = useSearchParams();
-  const filter = searchParams.get('filter') ?? '';
+  const [searchParams, setSearchParams] = useSearchParams()
+  const filter = searchParams.get('filter') ?? ''
 
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchParams({filter: e.target.value})
@@ -51,7 +51,7 @@ export const Home = () => {
       </div>
           
       <div className='p-5'>
-        <h1 className="text-xl font-bold text-gray-900 dark:text-black uppercase">New collection</h1>
+        <h1 className='text-xl font-bold text-gray-900 dark:text-black uppercase'>New collection</h1>
         <Swiper modules={[Pagination, Navigation, Autoplay]}
           autoplay={{
             delay: 10000,
@@ -84,9 +84,9 @@ export const Home = () => {
             <div className='container mx-auto'>
               <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0 '>
                 {filteredProductsHalloween.filter((product: ProductTypeProps) => {
-                  if (!filter) return true;
+                  if (!filter) return true
                   if (filter) {
-                    const name = product.title.toLowerCase();
+                    const name = product.title.toLowerCase()
                     return name.includes(filter.toLowerCase())
                   }
                 })
@@ -104,7 +104,7 @@ export const Home = () => {
       </div>
 
       <div className='p-5'>
-        <h1 className="text-xl font-bold text-gray-900 dark:text-black uppercase">Halloween collection</h1>
+        <h1 className='text-xl font-bold text-gray-900 dark:text-black uppercase'>Halloween collection</h1>
         <Swiper modules={[Pagination, Navigation, Autoplay]}
           autoplay={{
             delay: 10000,
@@ -137,9 +137,9 @@ export const Home = () => {
             <div className='container mx-auto'>
               <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0 '>
                 {filteredProductsNewProducts.filter((product: ProductTypeProps) => {
-                  if (!filter) return true;
+                  if (!filter) return true
                   if (filter) {
-                    const name = product.title.toLowerCase();
+                    const name = product.title.toLowerCase()
                     return name.includes(filter.toLowerCase())
                   }
                 })
@@ -157,7 +157,7 @@ export const Home = () => {
       </div>
 
       <div className='p-5'>
-        <h1 className="text-xl font-bold text-gray-900 dark:text-black uppercase">Best Sellers</h1>
+        <h1 className='text-xl font-bold text-gray-900 dark:text-black uppercase'>Best Sellers</h1>
         <Swiper modules={[Pagination, Navigation, Autoplay]}
           autoplay={{
             delay: 10000,
@@ -188,11 +188,11 @@ export const Home = () => {
           }} >
           <>
             <div className='container mx-auto'>
-              <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0 '>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0 '>
                 {filteredProductsBestSeller.filter((product: ProductTypeProps) => {
-                  if (!filter) return true;
+                  if (!filter) return true
                   if (filter) {
-                    const name = product.title.toLowerCase();
+                    const name = product.title.toLowerCase()
                     return name.includes(filter.toLowerCase())
                   }
                 })

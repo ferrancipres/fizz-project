@@ -1,12 +1,12 @@
 // import React from 'react'
-import { FC, useContext } from "react"
-import { CartContext } from "../../context"
-import { CartItemType } from "../../types"
-import { ProductTypeProps } from "../../types"
-import { CheckoutItem } from "./CheckoutItem"
+import { FC, useContext } from 'react'
+import { CartContext } from '../../context'
+import { CartItemType } from '../../types'
+import { ProductTypeProps } from '../../types'
+import { CheckoutItem } from './CheckoutItem'
 import { IoMdArrowForward } from 'react-icons/io'
-import { Link } from "react-router-dom"
-import { CheckoutForm } from "./CheckoutForm"
+import { Link } from 'react-router-dom'
+import { CheckoutForm } from './CheckoutForm'
 
 export const CheckoutDetails: FC = () => {
   const { cart, itemAmount } = useContext(CartContext) as CartItemType

@@ -1,8 +1,8 @@
-import { useContext } from "react"
-import { AuthContext } from "../auth/context/authContext"
-import { ReactNode } from "react"
-import { Navigate } from "react-router-dom"
-import { AuthContextType } from "../auth/context/authContext"
+import { useContext } from 'react'
+import { AuthContext } from '../auth/context/authContext'
+import { ReactNode } from 'react'
+import { Navigate } from 'react-router-dom'
+import { AuthContextType } from '../auth/context/authContext'
 
 export type PrivateTypeProps = {
     children: ReactNode

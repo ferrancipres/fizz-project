@@ -31,8 +31,8 @@ export const Navbar = () => {
     })
   })
 
-  const [searchParams, setSearchParams] = useSearchParams();
-  const filter = searchParams.get('filter') ?? '';
+  const [searchParams, setSearchParams] = useSearchParams()
+  const filter = searchParams.get('filter') ?? ''
 
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchParams({ filter: e.target.value })
@@ -49,7 +49,7 @@ export const Navbar = () => {
 
           <div className='flex justify-center items-center'>
             <input value={filter} onChange={handleFilter} type='search' placeholder='                  filter' 
-              className="bg-transparent font-light placeholder-gray-300 text-gray-900 rounded-xl border-none ring-1 ring-gray-300" />
+              className='bg-transparent font-light placeholder-gray-300 text-gray-900 rounded-xl border-none ring-1 ring-gray-300' />
           </div> 
           
             <div onClick={() => setIsOpen(!isOpen)} className='cursor-pointer flex relative' >

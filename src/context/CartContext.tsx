@@ -18,9 +18,9 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
   useEffect(() => {
     const total = cart.reduce((accumulator, currentItem) => {
       return accumulator + currentItem.price * currentItem.amount
-    }, 0);
+    }, 0)
     setTotal(total)
-  },);
+  },)
 
   useEffect(() => {
     if(cart) {
@@ -29,13 +29,13 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
       }, 0)
       setItemAmount(amount)
     }
-  },[cart]);
+  },[cart])
 
   const addToCart = (product:ProductTypeProps) => {
 
     const newItem: ProductTypeProps = {... product, amount: 1 }
     const cartItem = cart.find((item:ProductTypeProps) => {
-      return item.id === product.id;
+      return item.id === product.id
     })
 
     if(cartItem) {
@@ -73,7 +73,7 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
 
   const decreaseAmount = (id:number) => {
     const cartItem = cart.find((item) => {
-      return item.id === id;
+      return item.id === id
     })
 
     if(cartItem) {
@@ -81,13 +81,13 @@ export const CartProvider:FC<CartProviderProps> = ({children}) => {
         if (item.id === id) {
           return { ...cartItem, amount: cartItem.amount - 1 }
         } else {
-          return item;
+          return item
         }
       })
       setCart(newCart)
 
       if (cartItem.amount < 2) {
-        removeFromCart(id);
+        removeFromCart(id)
       }
     }
   }

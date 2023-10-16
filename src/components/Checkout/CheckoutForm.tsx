@@ -1,30 +1,15 @@
 // import React from 'react'
 import { HiChevronDown } from 'react-icons/hi'
-import { useContext, useState } from 'react';
-import { CartContext } from '../../context';
-import { CartItemType } from '../../types';
-import { Modal } from '..';
-import { useForm, SubmitHandler } from 'react-hook-form';
-
-
-export type CheckoutFormProps = {
-    onSubmit: SubmitHandler<FormInput>;
-}
-
-export type FormInput = {
-    email: string;
-    confirmEmail: string;
-    address: string;
-    postCode: string;
-    city: string;
-    province: string;
-    deliveryMethod: string;
-    paymentMethod: string;
-    terms: boolean;
-};
+import { useContext, useState } from 'react'
+import { CartContext } from '../../context'
+import { CartItemType } from '../../types'
+import { Modal } from '..'
+import { useForm, SubmitHandler } from 'react-hook-form'
+import { FormInput } from '../../types/FormInput'
+import { CheckoutFormProps } from '../../types/CheckoutFormProps'
 
 export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
-    const { register, handleSubmit, formState: { errors } } = useForm<FormInput>();
+    const { register, handleSubmit, formState: { errors } } = useForm<FormInput>()
     const { total } = useContext(CartContext) as CartItemType
     const [showModal, setShowModal] = useState(false)
 
@@ -45,7 +30,7 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                                 <div className='flex flex-col text-black mb-2'>
                                     <input 
                                         className={`rounded-md bg-gray-200 p-2 ${errors.email ? 'border-red-500' : ''}`}
-                                        type="text"
+                                        type='text'
                                         id='email'
                                         {...register('email', {
                                             required: 'Email is required',
@@ -70,7 +55,7 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                             <div className='flex flex-col text-black mb-2'>
                                     <input 
                                         className={`rounded-md bg-gray-200 p-2 ${errors.confirmEmail ? 'border-red-500' : ''}`}
-                                        type="text"
+                                        type='text'
                                         id='confirmEmail'
                                         {...register('confirmEmail', {
                                             required: true,
@@ -115,7 +100,7 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                                 <div className='flex flex-col text-black mb-2'>
                                     <input
                                         className={`rounded-md bg-gray-200 p-2 ${errors.address ? 'border-red-500' : ''}`}
-                                        type="text"
+                                        type='text'
                                         id='address'
                                         {...register('address', {
                                             required: 'Address is required',
@@ -141,7 +126,7 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                             <div className='flex flex-col text-black mb-2'>
                                     <input
                                         className={`rounded-md bg-gray-200 p-2 ${errors.postCode ? 'border-red-500' : ''}`}
-                                        type="number"
+                                        type='number'
                                         id='postCode'
                                         {...register('postCode', {
                                             required: 'postCode is required',
@@ -163,7 +148,7 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                             <div className='flex flex-col text-black mb-2'>
                                     <input
                                         className={`rounded-md bg-gray-200 p-2 ${errors.city ? 'border-red-500' : ''}`}
-                                        type="text"
+                                        type='text'
                                         id='city'
                                         {...register('city', {
                                             required: 'City is required',
@@ -189,7 +174,7 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                             <div className='flex flex-col text-black mb-2'>
                                     <input
                                         className={`rounded-md bg-gray-200 p-2 ${errors.province ? 'border-red-500' : ''}`}
-                                        type="text"
+                                        type='text'
                                         id='province'
                                         {...register('province', {
                                             required: 'Province is required',
@@ -234,10 +219,10 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                                 <div className='flex flex-col justify-center items-start gap-3 mb-2'>
 
                                     <div className='flex justify-center items-center gap-3'>
-                                        <input className="rounded-md bg-gray-200 p-2 border-b"
-                                            type="radio"
-                                            id="deliveryMethod"
-                                            {...register("deliveryMethod", {
+                                        <input className='rounded-md bg-gray-200 p-2 border-b'
+                                            type='radio'
+                                            id='deliveryMethod'
+                                            {...register('deliveryMethod', {
                                                 required: true
                                             })}
                                         />
@@ -248,9 +233,9 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                                     </div>
 
                                     <div className='flex justify-center items-center gap-3'>
-                                        <input className="rounded-md bg-gray-200 p-2 border-b"
-                                            type="radio"
-                                            id="deliveryMethod"
+                                        <input className='rounded-md bg-gray-200 p-2 border-b'
+                                            type='radio'
+                                            id='deliveryMethod'
                                             {...register('deliveryMethod', {
                                                 required: true
                                             })}
@@ -262,9 +247,9 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                                     </div>
 
                                     <div className='flex justify-center items-center gap-3'>
-                                        <input className="rounded-md bg-gray-200 p-2 border-b"
-                                            type="radio"
-                                            id="deliveryMethod"
+                                        <input className='rounded-md bg-gray-200 p-2 border-b'
+                                            type='radio'
+                                            id='deliveryMethod'
                                         {...register('deliveryMethod', {
                                                 required: true
                                             })}
@@ -294,9 +279,9 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                                 <div className='flex flex-col justify-center items-start gap-3 mb-2'>
 
                                     <div className='flex justify-center items-center gap-3'>
-                                        <input className="rounded-md bg-gray-200 p-2 border-b"
-                                            type="radio"
-                                            id="paymentMethod"
+                                        <input className='rounded-md bg-gray-200 p-2 border-b'
+                                            type='radio'
+                                            id='paymentMethod'
                                             {...register('paymentMethod', {
                                                 required: true
                                             })}
@@ -307,9 +292,9 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                                     </div>
 
                                     <div className='flex justify-center items-center gap-3'>
-                                        <input className="rounded-md bg-gray-200 p-2 border-b"
-                                            type="radio"
-                                            id="paymentMethod"
+                                        <input className='rounded-md bg-gray-200 p-2 border-b'
+                                            type='radio'
+                                            id='paymentMethod'
                                             {...register('paymentMethod', {
                                                 required: true
                                             })}
@@ -320,9 +305,9 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                                     </div>
 
                                     <div className='flex justify-center items-center gap-3'>
-                                        <input className="rounded-md bg-gray-200 p-2 border-b"
-                                            type="radio"
-                                            id="paymentMethod"
+                                        <input className='rounded-md bg-gray-200 p-2 border-b'
+                                            type='radio'
+                                            id='paymentMethod'
                                             {...register('paymentMethod', {
                                                 required: true
                                             })}
@@ -343,8 +328,8 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({ onSubmit }) => {
                         {/* Contact Information */}
                         <form className='flex flex-col pr-10 mb-2'>
                             <div className='flex justify-start items-center gap-2 text-black px-4'>
-                                <input className="rounded-md bg-gray-200 p-2"
-                                    type="checkbox"
+                                <input className='rounded-md bg-gray-200 p-2'
+                                    type='checkbox'
                                     id='terms'
                                     {...register('terms', {
                                     })}

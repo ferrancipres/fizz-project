@@ -1,11 +1,11 @@
-import { useReducer} from "react";
+import { useReducer} from 'react'
 
-import { authReducer } from "./authReducer";
-import { AuthContext } from "./authContext";
+import { authReducer } from './authReducer'
+import { AuthContext } from './authContext'
 
-import { types } from "./types/types";
-import { userTypeLogged } from "./types/userTypeLogged";
-import { AuthProviderProps } from "./types/AuthProviderProps";
+import { types } from './types/types'
+import { userTypeLogged } from './types/userTypeLogged'
+import { AuthProviderProps } from './types/AuthProviderProps'
 
 const init = () => {
     const localUser = localStorage.getItem('user')

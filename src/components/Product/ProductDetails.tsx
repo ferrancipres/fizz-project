@@ -1,18 +1,18 @@
 
-import { useContext, useState } from "react";
-import { useParams } from "react-router-dom"
+import { useContext, useState } from 'react'
+import { useParams } from 'react-router-dom'
 
-import { productContext, CartContext } from '../../context';
+import { productContext, CartContext } from '../../context'
 
 import { IoMdArrowForward } from 'react-icons/io'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
-import { CartItemType, ProductContextType } from '../../types';
-import { LayoutDetails } from "..";
-import { Accordion } from "../Accordion/Accordion";
+import { CartItemType, ProductContextType } from '../../types'
+import { LayoutDetails } from '..'
+import { Accordion } from '../Accordion/Accordion'
 
 export const ProductDetails = () => {
-    const { title: productID } = useParams();
+    const { title: productID } = useParams()
 
     const { products } = useContext(productContext) as ProductContextType
     const { addToCart } = useContext(CartContext) as CartItemType
@@ -27,15 +27,15 @@ export const ProductDetails = () => {
         )
     }
     
-    const { title, price, description, image, imagenback1, imagenback2, category } = product;
+    const { title, price, description, image, imagenback1, imagenback2, category } = product
 
     const [images] = useState({
         image,
         imagenback1,
         imagenback2
-    });
+    })
 
-    const [activeImg, setActiveImg] = useState(images.image);
+    const [activeImg, setActiveImg] = useState(images.image)
 
     return (
         <LayoutDetails>
@@ -56,7 +56,7 @@ export const ProductDetails = () => {
                         <h2 className='text-3xl font-bold'>{title}</h2>
                         <p className='text-gray-600 '>{description}</p>
                         <h6 className='mt-5 text-xl font-semibold'>$ {parseFloat(price).toFixed(2)}</h6> 
-                        <div className="flex items-center">
+                        <div className='flex items-center'>
                             <button onClick={() => addToCart(product)} className='mt-5 bg-black py-4 px-8 text-white mb-6'>Add to cart</button>
                             <Link to='/'>
                                 <button className='mx-2 bg-white py-6 px-8 text-black mb-6 mt-4'><IoMdArrowForward className='text-2xl rotate-180' />Back</button>
